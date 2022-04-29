@@ -11,7 +11,13 @@ public class Plane : MapItem
 
     public override void Update()
     {
-        var move = _path.Dequeue();
+        char move = (char)0;
+        if (_path.Count() != 1) {
+            move = _path.Dequeue();
+        }
+        else {
+            move = _path.Last();
+        }
         switch (move)
         {
             case 'N':
@@ -25,6 +31,8 @@ public class Plane : MapItem
                 break;
             case 'W':
                 X--;
+                break;
+            default:
                 break;
         }
     }
