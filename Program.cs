@@ -10,13 +10,13 @@ void Main()
     {
         Logger.Reset();
 
-        Logger.LogWarning($"{Environment.NewLine}R_A_D_A_R {Environment.NewLine}");
+        Logger.LogColor(ConsoleColor.Yellow, $"{Environment.NewLine}R_A_D_A_R {Environment.NewLine}");
         map.Print();
 
-        Logger.LogWarning($"{Environment.NewLine}M_E_N_U {Environment.NewLine}");
+        Logger.LogColor(ConsoleColor.Yellow, $"{Environment.NewLine}M_E_N_U {Environment.NewLine}");
         menu.Print();
 
-        Logger.LogWarning("Your choice: ");
+        Logger.LogColor(ConsoleColor.Yellow, "Your choice: ");
         switch (Console.ReadLine()?.ToLower())
         {
             case "exit":
@@ -60,13 +60,13 @@ Menu GetMenu()
 
 Plane GetPlaneFromUser()
 {
-    Logger.LogWarning("Enter new plane x: ");
+    Logger.LogColor(ConsoleColor.Yellow, "Enter new plane x: ");
     var newX = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogWarning("Enter new plane y: ");
+    Logger.LogColor(ConsoleColor.Yellow, "Enter new plane y: ");
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogWarning("Enter path plane[Exp: NNNEWWE]: ");
+    Logger.LogColor(ConsoleColor.Yellow, "Enter path plane[Exp: NNNEWWE]: ");
     var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
 
     return new Plane(newX, newY, newPath);

@@ -26,7 +26,7 @@ public class Map : IUiElement
     {
         for (var y = 0; y < _map.Length - 1; y++)
         {
-            Logger.LogSuccess($"{y:00}");
+            Logger.LogColor(ConsoleColor.Green, $"{y:00}");
             for (var x = 0; x < _map[y].Length; x++)
             {
                 var item = _itemsToRender.FirstOrDefault(i => i.X == x && i.Y == y);
@@ -40,13 +40,13 @@ public class Map : IUiElement
                 switch (cell)
                 {
                     case 'O':
-                        Logger.LogColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
+                        Logger.LogBGColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
                         break;
                     case 'X':
-                        Logger.LogColor((ConsoleColor) Color.BackgroundNotSky, cell.ToString());
+                        Logger.LogBGColor((ConsoleColor) Color.BackgroundNotSky, cell.ToString());
                         break;
                     default:
-                        Logger.LogColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
+                        Logger.LogBGColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
                         break;
                 }
             }
