@@ -29,7 +29,7 @@ public class Map : IUiElement
             Logger.LogSuccess($"{y:00}");
             for (int x = 0; x < _map[y].Length; x++)
             {
-                var item = _itemsToRender.FirstOrDefault(i => i.X == x && i.Y == y);
+                var item = _itemsToRender.FirstOrDefault(i => i.getX() == x && i.getY() == y);
                 if (item != null)
                 {
                     Logger.LogPlane();
