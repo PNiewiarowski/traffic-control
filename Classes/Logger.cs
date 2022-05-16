@@ -28,9 +28,15 @@ public static class Logger
         Log(message);
     }
 
-    public static void LogColor(ConsoleColor color, string message)
+    public static void LogBGColor(ConsoleColor color, string message)
     {
         Console.BackgroundColor = color;
+        Console.ForegroundColor = color;
+        Log(message);
+    }
+
+    public static void LogColor(ConsoleColor color, string message)
+    {
         Console.ForegroundColor = color;
         Log(message);
     }
