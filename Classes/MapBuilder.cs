@@ -15,13 +15,13 @@ public class MapBuilder
 
     public string Build()
     {
-        var map = "";
-        var rand = new Random();
-        var chance = _chance * 100;
+        string map = "";
+        Random rand = new Random();
+        float chance = _chance * 100;
 
-        for (var i = 0; i < _height; i++)
+        for (int i = 0; i < _height; i++)
         {
-            for (var j = 0; j < _width; j++)
+            for (int j = 0; j < _width; j++)
             {
                 if (chance <= rand.Next(100))
                 {

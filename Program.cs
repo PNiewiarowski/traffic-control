@@ -1,11 +1,11 @@
-﻿using TrafficController.Classes;
+using TrafficController.Classes;
 
 void Main()
 {
-    var map = GetMap();
-    var menu = GetMenu();
+    Map map = GetMap();
+    Menu menu = GetMenu();
 
-    var run = true;
+    Boolean run = true;
     while (run)
     {
         Logger.Reset();
@@ -29,7 +29,7 @@ void Main()
                 break;
             case "c":
             case "create":
-                var plane = GetPlaneFromUser();
+                Plane plane = GetPlaneFromUser();
                 map.AddItemToRender(plane);
                 break;
         }

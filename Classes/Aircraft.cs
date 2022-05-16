@@ -1,10 +1,17 @@
 namespace TrafficController.Classes;
 
-public class Plane : MapItem
+public class Plane : Aircraft
+{
+    private new char _symbol = 'P';
+    public Plane(int x, int y, Queue<char> path) : base(x, y, path) { }
+}
+
+public class Aircraft : MapItem
 {
     private Queue<char> _path;
+    protected char _symbol;
 
-    public Plane(int x, int y, Queue<char> path) : base(x, y)
+    public Aircraft(int x, int y, Queue<char> path) : base(x, y)
     {
         _path = path;
     }
@@ -16,7 +23,7 @@ public class Plane : MapItem
             move = _path.Dequeue();
         }
         else {
-            move = _path.Last();
+            move = _path.Last(); //** jeśli wskazana trasa się kończy - przesuwa tak samo jak ostatni wskaźnik trasy. Zmienić, tak jak chcemy żeby działało!//
         }
         switch (move)
         {
