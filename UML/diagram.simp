@@ -1,0 +1,1880 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="13.30" multi-file="no" uid="simp0b9b0fe73ad242bfae82ee15c827d40b">
+  <meta>
+    <name>diagram</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="2">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>6</value>
+      </counter>
+      <counter>
+        <item-type type="Unknown" />
+        <value>1</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="package" type="Package" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>734</value>
+      </counter>
+      <counter>
+        <item-type type-id="abstraction" type="Abstraction" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>7</value>
+      </counter>
+      <counter>
+        <item-type type-id="usage" type="Usage" />
+        <value>9</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>20</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>10</value>
+      </counter>
+      <counter>
+        <item-type type-id="property" type="Property" />
+        <value>26</value>
+      </counter>
+      <counter>
+        <item-type type-id="text" type="Text" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="realization" type="Realization" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="substitution" type="Substitution" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="universal-connector" type="Universal Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="diagram-description" type="Diagram Description" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment" type="Comment" />
+        <value>12</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlPackageDiagram</type>
+        <value>1</value>
+      </counter>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlClassDiagram</type>
+        <value>2</value>
+      </counter>
+    </diagrams>
+    <fields>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.DiagramItems.Fields.OperationField</type>
+        <value>36</value>
+      </counter>
+    </fields>
+  </counters>
+  <alias-groups />
+  <management uid="md-92ce0af2e269444493511b05aaadd449" name="" task-id-sequence="0">
+    <working-schedule uid="ws-bfb2aa75dee04287ba2167cb5ab63f61" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-80b80c0391d84b74a42862210632202d" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-beb4c14fbfb04e9b851eed1df7b517b5" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types>
+      <type id="height : float" tid="" name="height : float" description="" />
+      <type id="ConsoleColor" tid="" name="ConsoleColor" description="" />
+      <type id="Class:3370c1d0d24540f8bd1077edada057fd" tid="" name="Route" description="" class-ref="3370c1d0d24540f8bd1077edada057fd" />
+      <type id="float" tid="" name="float" description="" />
+      <type id="Product" tid="" name="Product" description="" />
+      <type id="List&lt;RoutePoint&gt;" tid="" name="List&lt;RoutePoint&gt;" description="" />
+      <type id="string" tid="" name="string" description="" />
+      <type id="List&lt;RoutePoints&gt;" tid="" name="List&lt;RoutePoints&gt;" description="" />
+      <type id="Queue&lt;RoutePoint&gt;" tid="" name="Queue&lt;RoutePoint&gt;" description="" />
+      <type id="IEnumerable&lt;string&gt;" tid="" name="IEnumerable&lt;string&gt;" description="" />
+      <type id="int" tid="" name="int" description="" />
+      <type id="MapItem" tid="" name="MapItem" description="" />
+      <type id="Class:dffaf50dcacd49a0af3b5047594f95f4" tid="" name="RoutePoint" description="" class-ref="dffaf50dcacd49a0af3b5047594f95f4" />
+      <type id="List&lt;MapItem&gt;" tid="" name="List&lt;MapItem&gt;" description="" />
+      <type id="List&lt;char&gt;" tid="" name="List&lt;char&gt;" description="" />
+      <type id="char" tid="" name="char" description="" />
+      <type id="Queue&lt;char&gt;" tid="" name="Queue&lt;char&gt;" description="" />
+    </custom-types>
+  </types>
+  <items>
+    <item id="c60d21e376674d51ae4f02c8cfb49b81" cid="PROP005" type="property" name="_height" style-class="" owner="f8bf4616faf4406e84de966846ca1724" creation-date="05/15/2022 04:00:54" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv11dea525f66544058ad6da6178c35dd2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_height" />
+      </tagged-values>
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature read-only="true" type="int" type-id="int" />
+      <property />
+    </item>
+    <item id="di05f0f80deedc4d7e929c7bde2f85b6b21643" cid="PROP010" type="property" name="_symbol" style-class="" owner="di783bc9d79be34f4c84ea096a484921e51643" creator="" creation-date="05/15/2022 04:29:09" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="char" type-id="char" />
+      <property />
+    </item>
+    <item id="0849274207664fabb206aa71ac3e5b3f" cid="PROP013" type="property" name="_path" style-class="" owner="3370c1d0d24540f8bd1077edada057fd" creator="" creation-date="05/15/2022 04:45:05" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="List&lt;RoutePoint&gt;" type-id="List&lt;RoutePoint&gt;" />
+      <property />
+    </item>
+    <item id="7b70e5ba782e43029e0562474f0e5b5d" cid="PROP008" type="property" name="_symbol" style-class="" owner="c0e1c59fc8974afd88586b98ec22ff04" creator="" creation-date="05/15/2022 04:11:39" visibility="protected">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="char" type-id="char" />
+      <property />
+    </item>
+    <item id="di3a7c2e253be94079b8709739d8824d417051" cid="PROP011" type="property" name="_symbol" style-class="" owner="dia8e191a751dd4b2283fb35d757183d8a7051" creator="" creation-date="05/15/2022 04:29:09" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="char" type-id="char" />
+      <property />
+    </item>
+    <item id="a28ffa0a6b234dd58c9a9b9e9cf5f6ae" cid="PROP006" type="property" name="_chance" style-class="" owner="f8bf4616faf4406e84de966846ca1724" creation-date="05/15/2022 04:00:54" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv137edacf8b6d469687e5869365af2742" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_chance" />
+      </tagged-values>
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature read-only="true" type="float" type-id="float" />
+      <property />
+    </item>
+    <item id="d3137f90700444c3b15a15460dfa6bb7" cid="PROP020" type="property" name="x" style-class="" owner="dffaf50dcacd49a0af3b5047594f95f4" creator="" creation-date="05/15/2022 05:09:36" visibility="public">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="int" type-id="int" />
+      <property />
+    </item>
+    <item id="ed925269f4084663bb1c6fd2d5ef666a" cid="PROP004" type="property" name="_width" style-class="" owner="f8bf4616faf4406e84de966846ca1724" creation-date="05/15/2022 04:00:54" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv89942ce141f2445a964029984b97236b" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_width" />
+      </tagged-values>
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature read-only="true" type="int" type-id="int" />
+      <property />
+    </item>
+    <item id="812f73604a19450eb3c439d37dcf7332" cid="PROP007" type="property" name="_itemsToRender" style-class="" owner="39a19fbf39bf46a7bb0598378fcaa615" creation-date="05/15/2022 04:00:54" visibility="private">
+      <tagged-values>
+        <tagged-value id="tvf2564cef33644161a8434a1a9c88cdc2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_itemsToRender" />
+      </tagged-values>
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature read-only="true" type="List&lt;MapItem&gt;" type-id="List&lt;MapItem&gt;" />
+      <property />
+    </item>
+    <item id="1d751fabafa14fd6abc2dda90c035b32" cid="PROP001" type="property" name="_path" style-class="" owner="c0e1c59fc8974afd88586b98ec22ff04" creation-date="05/15/2022 04:00:53" visibility="private">
+      <tagged-values>
+        <tagged-value id="tv5e9652bd1cb74bd2bb3b632b89c0252f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="_path" />
+      </tagged-values>
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+      <property />
+    </item>
+    <item id="fa4dee97c8f84fb9beba82ddd43a5525" cid="PROP022" type="property" name="_points" style-class="" owner="b9e54f2bb9e347caaaa2b8ff71f791ad" creator="" creation-date="05/15/2022 05:11:28" visibility="private">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="List&lt;RoutePoint&gt;" type-id="List&lt;RoutePoint&gt;" />
+      <property />
+    </item>
+    <item id="45c14e8ddd094761b8fe8a8f00f38de3" cid="PROP021" type="property" name="y" style-class="" owner="dffaf50dcacd49a0af3b5047594f95f4" creator="" creation-date="05/15/2022 05:09:47" visibility="public">
+      <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+        <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+        <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+        <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+        <border color="#FF555555" width="2" dash-style="Solid" />
+        <label-connector color="#80000000" width="1" dash-style="Dash" />
+        <alternate-styles>
+          <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+            <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+            <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+            <background type="solid" colors="#FF203D85,#FF203D85" />
+            <border color="#FF203D85" width="2" dash-style="Solid" />
+            <label-connector color="#80000000" width="1" dash-style="Dash" />
+          </alternate-style>
+        </alternate-styles>
+      </style>
+      <feature />
+      <structural-feature type="int" type-id="int" />
+      <property />
+    </item>
+  </items>
+  <models>
+    <model id="pb03d1f2c244841449439595ddd316269_545702077" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>05/15/2022 04:00:10</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items>
+        <item id="54d450dc6b0740598b62266461c0a55b" cid="PKG001" type="package" name="" style-class="" creator="" creation-date="05/15/2022 04:00:54" visibility="undefined">
+          <tagged-values>
+            <tagged-value id="tv387f7943a2f84faf9724d6068026ff24" name="namespace" type="text" multiple="false" hidden="false" value="" />
+            <tagged-value id="tvf756856d189944b1b501807bf6e58a0d" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+        </item>
+      </abstract-items>
+      <sub-models>
+        <model id="p026718bf2678445d9b083100f5c92d56_925772242" name="" namespace="" order-index="2">
+          <meta>
+            <authors>
+              <author> </author>
+            </authors>
+            <description />
+            <creation-date>05/15/2022 04:00:54</creation-date>
+            <change-date>01/01/0001 00:00:00</change-date>
+            <revision-count>0</revision-count>
+            <version />
+          </meta>
+          <tagged-values>
+            <tagged-value id="tv88d4522041eb4942b738dae8c118400a" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+          </tagged-values>
+          <abstract-items>
+            <item id="cca3444baf8b484dafba7b5abefe9a12" cid="PROP002" type="property" name="X" style-class="" owner="59b4e7ab51114f5faab26c01da4e455e" creation-date="05/15/2022 04:00:54" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tvfa16adfdb9614d17971f9600fec34de2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="X" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="f8bf4616faf4406e84de966846ca1724" cid="C006" type="class" name="MapBuilder" style-class="" creation-date="05/15/2022 04:00:54" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv8e5323295f0c4392a00a2039026e228f" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv9f7f88dcfff344e48eb61e42696d45d6" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MapBuilder" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="ed925269f4084663bb1c6fd2d5ef666a" />
+                <owned-item ref="c60d21e376674d51ae4f02c8cfb49b81" />
+                <owned-item ref="a28ffa0a6b234dd58c9a9b9e9cf5f6ae" />
+                <owned-item ref="c60d21e376674d51ae4f02c8cfb49b81" />
+                <owned-item ref="a28ffa0a6b234dd58c9a9b9e9cf5f6ae" />
+                <owned-item ref="ed925269f4084663bb1c6fd2d5ef666a" />
+              </owned-items>
+              <attributes>
+                <attribute id="a5794859dd77240dda15c3ece8abe760d6" cid="PROP004" name="_width" creation-date="05/15/2022 04:00:54" property-ref="ed925269f4084663bb1c6fd2d5ef666a" />
+                <attribute id="ad21359d15a8f41179ed45b8b340408f26" cid="PROP005" name="_height" creation-date="05/15/2022 04:00:54" property-ref="c60d21e376674d51ae4f02c8cfb49b81" />
+                <attribute id="a00ca6c4e001149d8b02d584ab5af05216" cid="PROP006" name="_chance" creation-date="05/15/2022 04:00:54" property-ref="a28ffa0a6b234dd58c9a9b9e9cf5f6ae" />
+              </attributes>
+              <operations>
+                <operation id="o62c66af7c1024247ada628a5545ee9ec6" cid="OP017" name="MapBuilder" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pa13162463dc64c94aa47df12e5c02a53" name="width" type="int" type-id="int" />
+                    <parameter id="p57844c2b3bf64160b98960016293e5e5" name="height" type="int" type-id="int" />
+                    <parameter id="p65898f806c314ca39ceafb18d30e937d" name="chance" type="float" type-id="float" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="oa9366c9da533498e989fe30cd1ea6fe86" cid="OP018" name="Build" creation-date="05/15/2022 04:00:54" type="string" type-id="string" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        string map = "";
+        Random rand = new Random();
+        float chance = _chance * 100;
+
+        for (int i = 0; i &lt; _height; i++)
+        {
+            for (int j = 0; j &lt; _width; j++)
+            {
+                if (chance &lt;= rand.Next(100))
+                {
+                    map += "X";
+                    continue;
+                }
+
+                map += "O";
+            }
+
+            map += Environment.NewLine;
+        }
+
+        return map;
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="72342be06a9b45288f6bbb19ccf2cddb" cid="GNR001" type="generalization" name="" style-class="" creation-date="05/15/2022 04:00:54" from="c0e1c59fc8974afd88586b98ec22ff04" to="59b4e7ab51114f5faab26c01da4e455e" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tvb92e1026410042ac9f2e322835b229cc" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="486bce33fa314f54a25abeb30cb3dc1c" cid="REA001" type="realization" name="" style-class="" creation-date="05/15/2022 04:00:54" from="9ae6c67ec1e044aca42a0148a477f410" to="ac4f40c9f0954435b5d6af0edca30806" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv1791780023eb4e11aa9494834a6eca24" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="9ae6c67ec1e044aca42a0148a477f410" cid="C003" type="class" name="Menu" style-class="" creation-date="05/15/2022 04:00:54" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv900f77f4ee484d469d96e4df801773d8" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv3422251ee5b24911966eb6a0f1f430de" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Menu" />
+              </tagged-values>
+              <operations>
+                <operation id="ob41db71a15164988870d64d0c30f72cd5" cid="OP011" name="Menu" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="p7bc8f22fab2a4e29a4d0d2c95687f457" name="options" type="IEnumerable&lt;string&gt;" type-id="IEnumerable&lt;string&gt;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="of502049eca2f4cf6a1232a16586743e36" cid="OP012" name="Print" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        foreach (string option in this)
+            Logger.Log(option);
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="9e3b22362c9b4a77ad51b5c6c66f0515" cid="REA002" type="realization" name="" style-class="" creation-date="05/15/2022 04:00:54" from="39a19fbf39bf46a7bb0598378fcaa615" to="ac4f40c9f0954435b5d6af0edca30806" visibility="undefined">
+              <tagged-values>
+                <tagged-value id="tv2d0c1b9aa24648ad8c442ab6a836a051" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+              </tagged-values>
+            </item>
+            <item id="382909970e2e46b99393a867661c010a" cid="PROP003" type="property" name="Y" style-class="" owner="59b4e7ab51114f5faab26c01da4e455e" creation-date="05/15/2022 04:00:54" visibility="protected">
+              <tagged-values>
+                <tagged-value id="tv87b818ae857a4c1ba914afbc3d0b61e2" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Y" />
+              </tagged-values>
+              <feature />
+              <structural-feature type="int" type-id="int" />
+              <property />
+            </item>
+            <item id="ac4f40c9f0954435b5d6af0edca30806" cid="I001" type="uml-interface-classifier" name="IUiElement" style-class="" creation-date="05/15/2022 04:00:53" visibility="public">
+              <stereotypes>
+                <stereotype name="interface" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tv9bfcac3808db49959957e4aabf032d2b" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv4be1124a004148c4b8b27f31ce80c631" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="IUiElement" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="ac4f40c9f0954435b5d6af0edca30806_interface_c" type="interface" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="oe57dbe4442ec47d6bf5e917c799014d9991" cid="OP008" name="Print" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="undefined" />
+              </operations>
+            </item>
+            <item id="39a19fbf39bf46a7bb0598378fcaa615" cid="C007" type="class" name="Map" style-class="" creation-date="05/15/2022 04:00:54" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv37e33505602d4b86b8f1bec9fe8980b4" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv9660d2f394884ccd97a1ff9e411c8863" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Map" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="812f73604a19450eb3c439d37dcf7332" />
+                <owned-item ref="812f73604a19450eb3c439d37dcf7332" />
+              </owned-items>
+              <attributes>
+                <attribute id="afd1c7710dbee40a4855f3115f8db4a0e6" cid="PROP007" name="_itemsToRender" creation-date="05/15/2022 04:00:54" property-ref="812f73604a19450eb3c439d37dcf7332" />
+              </attributes>
+              <operations>
+                <operation id="o5bd8b353186b407f8f208859404019fd6" cid="OP019" name="Map" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="paffe1f56768948b9b071dbbfbf6c2433" name="map" type="string" type-id="string" />
+                    <parameter id="p80d2ca0f8e834ce8950fd89ac6268b4a" name="itemsToRender" type="List&lt;MapItem&gt;" type-id="List&lt;MapItem&gt;" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o06f9595cf7bb44cc9860397c2efd6c296" cid="OP020" name="AddItemToRender" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pc982d53371294cb9a3d71518867ea2bf" name="item" type="MapItem" type-id="MapItem" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        _itemsToRender.Add(item);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="ofd201331c16e47319b57c7e89cc638d86" cid="OP021" name="Print" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        for (int y = 0; y &lt; _map.Length - 1; y++)
+        {
+            Logger.LogSuccess($"{y:00}");
+            for (int x = 0; x &lt; _map[y].Length; x++)
+            {
+                var item = _itemsToRender.FirstOrDefault(i =&gt; i.getX() == x &amp;&amp; i.getY() == y);
+                if (item != null)
+                {
+                    Logger.LogPlane();
+                    continue;
+                }
+
+                char cell = _map[y][x];
+                switch (cell)
+                {
+                    case 'O':
+                        Logger.LogColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
+                        break;
+                    case 'X':
+                        Logger.LogColor((ConsoleColor) Color.BackgroundNotSky, cell.ToString());
+                        break;
+                    default:
+                        Logger.LogColor((ConsoleColor) Color.BackgroundSky, cell.ToString());
+                        break;
+                }
+            }
+
+            Logger.Log(Environment.NewLine);
+        }
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oee94685e510c461eb54b9df51f8bf5196" cid="OP022" name="UpdateItems" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        _itemsToRender.ForEach(i =&gt; i.Update());
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o02ba2933518349b1b4fbdcf29b4549cf460" cid="OP011" name="ProximityAlert" creation-date="05/15/2022 05:04:25" type="" type-id="" visibility="public">
+                  <source-codes>
+                    <source-code language="ActionScript" />
+                  </source-codes>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="c0e1c59fc8974afd88586b98ec22ff04" cid="C002" type="class" name="Aircraft" style-class="" creation-date="05/15/2022 04:00:53" visibility="public">
+              <tagged-values>
+                <tagged-value id="tv5f1278774da14d46be13e0acf329c4ea" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv80abdb7abb8046748139b7b3c1738b00" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Plane" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="1d751fabafa14fd6abc2dda90c035b32" />
+                <owned-item ref="f3c55d09c3364edfa81ea14177340032" />
+                <owned-item ref="7b70e5ba782e43029e0562474f0e5b5d" />
+                <owned-item ref="7b70e5ba782e43029e0562474f0e5b5d" />
+                <owned-item ref="1d751fabafa14fd6abc2dda90c035b32" />
+              </owned-items>
+              <attributes>
+                <attribute id="abe74e639cdd44cf8b7f7ae9aa7a1aed4997" cid="PROP001" name="_path" creation-date="05/15/2022 04:00:53" property-ref="1d751fabafa14fd6abc2dda90c035b32" />
+                <attribute id="ade202cec97974dffa782d8568f9e4e08465" cid="PROP008" name="_symbol" creation-date="05/15/2022 04:11:39" property-ref="7b70e5ba782e43029e0562474f0e5b5d" />
+              </attributes>
+              <operations>
+                <operation id="o30fe9b78f3bf4fbe95bbc8d143247901997" cid="OP009" name="Aircraft" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public">
+                  <parameters>
+                    <parameter id="pdec77dbd08764ad39368381b7b2bdb72" name="x" type="int" type-id="int" />
+                    <parameter id="p564d75d8f81f41b5b00f026201e7d9bd" name="y" type="int" type-id="int" />
+                    <parameter id="p1555c08336d341ce86bd0925c34949cf" name="path" type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                  <source-codes>
+                    <source-code language="ActionScript" />
+                  </source-codes>
+                </operation>
+                <operation id="o50e9d8ff1fc24308b3edd2ba2bc311f3998" cid="OP010" name="Update" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public">
+                  <documentations>
+                    <doc id="67a232ee14684eefa8c976ebc5eda338" name="">
+                      <text>
+                        <default>
+                          <style font-name="Verdana" font-size="12">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </default>
+                        <styles>
+                          <style name="S1" font-name="Microsoft Sans Serif" font-size="8">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </styles>
+                        <content>
+                          <paragraph>
+                            <style numbering-type="None">
+                              <numbering name="" multi-level="false">
+                                <numbering-level type="None" level="0" format="{0}." />
+                              </numbering>
+                            </style>
+                            <p s="S1">
+                              <t>** jeśli wskazana trasa się kończy - przesuwa tak samo jak ostatni wskaźnik trasy. Zmienić, tak jak chcemy żeby działało!//
+</t>
+                            </p>
+                          </paragraph>
+                        </content>
+                      </text>
+                    </doc>
+                  </documentations>
+                  <source-codes>
+                    <source-code language="CSharp">
+        char move = (char)0;
+        if (_path.Count() != 1) {
+            move = _path.Dequeue();
+        }
+        else {
+            move = _path.Last();                                                                                                                              
+        }
+        switch (move)
+        {
+            case 'N':
+                Y--;
+                break;
+            case 'S':
+                Y++;
+                break;
+            case 'E':
+                X++;
+                break;
+            case 'W':
+                X--;
+                break;
+            default:
+                break;
+        }
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o2048a6b8e0ce433d9981e9e5410a0414709" cid="OP004" name="GetSymbol" creation-date="05/15/2022 04:30:27" type="char" type-id="char" visibility="public">
+                  <source-codes>
+                    <source-code language="ActionScript" />
+                  </source-codes>
+                </operation>
+              </operations>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </item>
+            <item id="7de093217d324b4ba71abc7df5a440b5" cid="C001" type="class" name="Logger" style-class="" creation-date="05/15/2022 04:00:53" visibility="public">
+              <stereotypes>
+                <stereotype name="static" />
+              </stereotypes>
+              <tagged-values>
+                <tagged-value id="tvc5d9459512e647f7ac3e1087105c35c7" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tv57b1820b30d84b78ba48722541ded169" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="Logger" />
+              </tagged-values>
+              <stereotype-instances>
+                <stereotype id="7de093217d324b4ba71abc7df5a440b5_static_c" type="static" ref="" />
+              </stereotype-instances>
+              <operations>
+                <operation id="o3b0d26c1fca64fda92c2b41463a46ffe980" cid="OP001" name="Log" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p656672fb368449459831187607bd09f4" name="message" type="string" type-id="string" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.Write(message);
+        Console.ResetColor();
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o567597c5a565489987f66099048becf2987" cid="OP002" name="LogError" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p05766759b9294106b70f4be4b6292cae" name="message" type="string" type-id="string" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.ForegroundColor = ConsoleColor.Red;
+        Log(message);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5e6455fa0e2c44e2afef7dcd1d30be31989" cid="OP003" name="LogWarning" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p2a353d22eb0a4382a74ddb920ff706c0" name="message" type="string" type-id="string" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Log(message);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obc7985d0214b442fbb55b48a768499ef989" cid="OP004" name="LogSuccess" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="p54b9e44d189b46e18a128523978ebd4a" name="message" type="string" type-id="string" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.ForegroundColor = ConsoleColor.Green;
+        Log(message);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="obee0c7d31fc348c8b226539ac76bfda4989" cid="OP005" name="LogColor" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <parameters>
+                    <parameter id="pd327e7b42443463f8cd0f793f4578b22" name="color" type="ConsoleColor" type-id="ConsoleColor" />
+                    <parameter id="p68798a941f334c509bb2e29e8ef55986" name="message" type="string" type-id="string" />
+                  </parameters>
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.BackgroundColor = color;
+        Console.ForegroundColor = color;
+        Log(message);
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="od9e53e324c494ed38ee99d13c339e756989" cid="OP006" name="LogAircraft" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.BackgroundColor = (ConsoleColor) Color.BackgroundSky;
+        Console.ForegroundColor = (ConsoleColor) Color.PlaneForeground;
+        Log("V");
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="oc28d6f6bd5874cefa5544fd30ef45542989" cid="OP007" name="Reset" creation-date="05/15/2022 04:00:53" type="" type-id="" visibility="public" static="true">
+                  <source-codes>
+                    <source-code language="CSharp">
+        Console.ResetColor();
+        Console.Clear();
+    </source-code>
+                  </source-codes>
+                </operation>
+              </operations>
+            </item>
+            <item id="59b4e7ab51114f5faab26c01da4e455e" cid="C005" type="class" name="MapItem" style-class="" creation-date="05/15/2022 04:00:54" visibility="public" is-abstract="true">
+              <tagged-values>
+                <tagged-value id="tv8b87c70837b24fdb9e6dbc1be78584d5" name="namespace" type="text" multiple="false" hidden="false" value="" />
+                <tagged-value id="tvdc911de5b96849c9b36c7c559287d002" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="MapItem" />
+              </tagged-values>
+              <owned-items>
+                <owned-item ref="cca3444baf8b484dafba7b5abefe9a12" />
+                <owned-item ref="382909970e2e46b99393a867661c010a" />
+                <owned-item ref="cca3444baf8b484dafba7b5abefe9a12" />
+                <owned-item ref="382909970e2e46b99393a867661c010a" />
+              </owned-items>
+              <attributes>
+                <attribute id="ac7fc614faa8a48789c9bec21c6aa54d66" cid="PROP002" name="X" creation-date="05/15/2022 04:00:54" property-ref="cca3444baf8b484dafba7b5abefe9a12" />
+                <attribute id="a72d3bbc29e13429cbda6350141a11d1a6" cid="PROP003" name="Y" creation-date="05/15/2022 04:00:54" property-ref="382909970e2e46b99393a867661c010a" />
+              </attributes>
+              <operations>
+                <operation id="o63b0fe6e5f0f4bb4a5ae23284f09421f6" cid="OP015" name="MapItem" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="protected">
+                  <parameters>
+                    <parameter id="pd578417aba7b48c4b0e7a0b89239a7cc" name="x" type="int" type-id="int" />
+                    <parameter id="pe3319b756de24834aaca7e77d537ec27" name="y" type="int" type-id="int" />
+                  </parameters>
+                  <stereotypes>
+                    <stereotype>create</stereotype>
+                  </stereotypes>
+                </operation>
+                <operation id="o8452d000a55f468bbecf974db061e1d26" cid="OP013" name="getX" creation-date="05/15/2022 04:00:54" type="int" type-id="int" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        return X;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="occ78efdf0b3f44cfb40be558f32823226" cid="OP014" name="getY" creation-date="05/15/2022 04:00:54" type="int" type-id="int" visibility="public">
+                  <source-codes>
+                    <source-code language="CSharp">
+        return Y;
+    </source-code>
+                  </source-codes>
+                </operation>
+                <operation id="o5a40a8efbe344d1eadbf69c4e09501ba6" cid="OP016" name="Update" creation-date="05/15/2022 04:00:54" type="" type-id="" visibility="public" abstract="true" />
+              </operations>
+            </item>
+          </abstract-items>
+          <sub-models />
+          <diagram type="uml-class" id="pdd667749cccf49ba82e6b5aa264535cc_680411912" name="" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="" view-location="-362,298" zoom="0.8">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="vertical-linear" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>05/15/2022 04:00:54</creation-date>
+              <change-date>05/17/2022 00:16:51</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <tagged-values>
+              <tagged-value id="tvd7e8bc0cd94749d4993f9101f59bef1f" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+            </tagged-values>
+            <abstract-items>
+              <item id="b691f97d631d4920bd8cb228efec7c3a" cid="CMT011" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:16:51">
+                <comment>Klasy HotAirBalloon (balony), Helicopter (śmigłowcy), Plane (samoloty) oraz Gilder (szybowce) dziedziczą z klasy Aircraft, w polu posiadają zmienną wskazującą na znak oznaczający dany typ statku powietrznego. Oprócz tego klasy mają konstruktory tworzące obiektu typu odpowiedniego do klasy
+</comment>
+              </item>
+              <item id="f1b053a11e51426fad689b84b787d4f5" cid="CMT002" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:46:14">
+                <comment>klasa IUiElement jest interfejsem dla wszystkich wyświetlanych elementów, metoda print powinna zostać nadpisana</comment>
+              </item>
+              <item id="1cdb6de04bbb451093f5ef5798944cd9" cid="ELEM008" type="usage" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:03:28" from="7de093217d324b4ba71abc7df5a440b5" to="39a19fbf39bf46a7bb0598378fcaa615" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="1cdb6de04bbb451093f5ef5798944cd9_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="di85da09e4995d4c479ac58a9043c8ace04914" cid="C013" type="class" name="HotAirBalloon" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:09:38" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="dic733f187b8a94f6fa52778ca77f557da4914" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a155365349b2b403795e3eda744e2e4e9799" cid="PROP012" name="_symbol" creation-date="05/15/2022 04:29:09" property-ref="dic733f187b8a94f6fa52778ca77f557da4914" />
+                </attributes>
+                <operations>
+                  <operation id="o4ed72f602b704ddfaaec1ac78e3ff8c0900" cid="OP002" name="HotAirBalloon" creation-date="05/15/2022 04:25:47" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p98eec83d5cb342a691d9c6c6c3639a6b" name="x" type="int" type-id="int" />
+                      <parameter id="pfd2299077c9e48dcacd9e6ae9649411d" name="y" type="int" type-id="int" />
+                      <parameter id="pb90a2c8a6693415ca6a487e9893fa354" name="path" type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="9aa3d607bcfa498aa7f3f72329250fbf" cid="CMT001" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:45:09">
+                <comment>klasa Menu jest implementacją intefejsu IUiElement wyświetla menu z opcjami które podamy w argumencie
+nadpisuje metodę print, która wyświetla te opcje</comment>
+              </item>
+              <item id="bb9fa52b1f224b43b78affdfae728fc6" cid="ELEM004" type="usage" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:43:26" from="3370c1d0d24540f8bd1077edada057fd" to="c0e1c59fc8974afd88586b98ec22ff04" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="bb9fa52b1f224b43b78affdfae728fc6_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="b470a2e0a6774703b8fc5fba2625cd2f" cid="CMT007" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:59:05">
+                <comment>klasa RouteBuilder kształtuje trasę statków, tworzy obiekty klasy Route. Używa obiektów klasy RoutePoint do tworzenia trasy, posiada konstruktor oraz metodę Build, która "buduje" trasę.</comment>
+              </item>
+              <item id="229a11bbb3664b6b8bbafd865801e872" cid="GNR005" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:35:45" from="di85da09e4995d4c479ac58a9043c8ace04914" to="c0e1c59fc8974afd88586b98ec22ff04" visibility="package" />
+              <item id="163d6708a8e64aa4b7de7e3412c74736" cid="ELEM006" type="usage" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:02:40" from="dffaf50dcacd49a0af3b5047594f95f4" to="b9e54f2bb9e347caaaa2b8ff71f791ad" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="163d6708a8e64aa4b7de7e3412c74736_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="di84d2e9665a6d4c8c90270513f2a4effb4066" cid="DEP005" type="dependency" name="" style-class="" creator="" creation-date="03/31/2013 16:22:53" from="f8bf4616faf4406e84de966846ca1724" to="39a19fbf39bf46a7bb0598378fcaa615" visibility="undefined">
+                <stereotypes>
+                  <stereotype name="create" />
+                </stereotypes>
+                <documentations>
+                  <doc id="2117b04abbb14e1d85d17aa0d0e6f939">
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles>
+                        <style name="S1" font-name="Calibri" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </styles>
+                      <content>
+                        <paragraph>
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
+                          <p s="S1">
+                            <t>
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </doc>
+                </documentations>
+                <stereotype-instances>
+                  <stereotype id="di437163953951886347_create_c" type="create" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="diedc0e44b700a498c8d27d225a95281217257" cid="DEP006" type="dependency" name="" style-class="" creator="" creation-date="03/31/2013 16:22:53" from="b9e54f2bb9e347caaaa2b8ff71f791ad" to="3370c1d0d24540f8bd1077edada057fd" visibility="undefined">
+                <stereotypes>
+                  <stereotype name="create" />
+                </stereotypes>
+                <documentations>
+                  <doc id="2117b04abbb14e1d85d17aa0d0e6f939">
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles>
+                        <style name="S1" font-name="Calibri" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </styles>
+                      <content>
+                        <paragraph>
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
+                          <p s="S1">
+                            <t>
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </doc>
+                </documentations>
+                <stereotype-instances>
+                  <stereotype id="di437163953951886347_create_c" type="create" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="456f6dcb51ab429f86867991110b65df" cid="ELEM005" type="usage" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:48:44" from="dffaf50dcacd49a0af3b5047594f95f4" to="3370c1d0d24540f8bd1077edada057fd" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="456f6dcb51ab429f86867991110b65df_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="af3abfe3aeb14ced933ef866d12f9902" cid="ELEM007" type="usage" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:03:19" from="7de093217d324b4ba71abc7df5a440b5" to="9ae6c67ec1e044aca42a0148a477f410" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="af3abfe3aeb14ced933ef866d12f9902_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="380f1768fc51421f8b0a5e1a4d7ccbb3" cid="PROP023" type="property" name="height" style-class="" owner="dffaf50dcacd49a0af3b5047594f95f4" creator="" creation-date="05/15/2022 05:15:01" visibility="public">
+                <stereotypes>
+                  <stereotype name="Optional" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="380f1768fc51421f8b0a5e1a4d7ccbb3_Optional_c" type="Optional" />
+                </stereotype-instances>
+                <feature />
+                <structural-feature type="int" type-id="int" />
+                <property default-value="0">
+                  <source-codes>
+                    <source-code language="" uid="scs-65d11a61-e3ac-4f3b-9ec7-405cea0f7082" />
+                  </source-codes>
+                </property>
+              </item>
+              <item id="3a38fc8ddbb340838c75f5acaf429b5e" cid="GNR006" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:35:51" from="dia8e191a751dd4b2283fb35d757183d8a7051" to="c0e1c59fc8974afd88586b98ec22ff04" visibility="package" />
+              <item id="dic733f187b8a94f6fa52778ca77f557da4914" cid="PROP012" type="property" name="_symbol" style-class="" owner="di85da09e4995d4c479ac58a9043c8ace04914" creator="" creation-date="05/15/2022 04:29:09" visibility="private">
+                <feature />
+                <structural-feature type="char" type-id="char" />
+                <property>
+                  <source-codes>
+                    <source-code language="" uid="scs-82f782c4-f1a7-43f6-88cc-753cfedc50cd" />
+                  </source-codes>
+                </property>
+              </item>
+              <item id="b9e54f2bb9e347caaaa2b8ff71f791ad" cid="C018" type="class" name="RouteBuilder" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:43:49" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="39f57443625f48bc89c28812256e0130" />
+                  <owned-item ref="fa4dee97c8f84fb9beba82ddd43a5525" />
+                  <owned-item ref="fa4dee97c8f84fb9beba82ddd43a5525" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a232a7d9cbfc1467e97a7b3e59a0b8c7429" cid="PROP022" name="_points" creation-date="05/15/2022 05:11:28" property-ref="fa4dee97c8f84fb9beba82ddd43a5525" />
+                </attributes>
+                <operations>
+                  <operation id="o1405315e216b4a309d7d727a204bd2f33" cid="OP024" name="RouteBuilder" creation-date="05/17/2022 00:01:45" type="" type-id="" visibility="public">
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                  </operation>
+                  <operation id="oe99e4d2460e04447895e6247ccb28420634" cid="OP005" name="Build" creation-date="05/15/2022 04:51:37" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p839917ee679e431880c60c760a4aa630" name="points" type="List&lt;RoutePoint&gt;" type-id="List&lt;RoutePoint&gt;" default-value="null" />
+                    </parameters>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="c283bbe6251e4f4ab2727b0f4b94008a" cid="ELEM001" type="usage" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:07:30" from="59b4e7ab51114f5faab26c01da4e455e" to="39a19fbf39bf46a7bb0598378fcaa615" visibility="package">
+                <stereotypes>
+                  <stereotype name="use" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="c283bbe6251e4f4ab2727b0f4b94008a_use_c" type="use" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="5e91d298fbd44490bf7fbcf0baf6c89d" cid="PROP025" type="property" name="_currentPoint" style-class="" owner="3370c1d0d24540f8bd1077edada057fd" creator="" creation-date="05/15/2022 05:19:14" visibility="private">
+                <feature />
+                <structural-feature type="int" type-id="int" />
+                <property default-value="0">
+                  <source-codes>
+                    <source-code language="" uid="scs-9551d5a7-32ea-4ecb-bb1a-7cc29329eea0" />
+                  </source-codes>
+                </property>
+              </item>
+              <item id="009c2756045e45b393702667b105d2e1" cid="CMT006" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:57:05">
+                <comment>struktura RoutePoint, jest używana przez klasę Route jej obiekty są punktami trasy statku.
+ma pola określające położenie, wysokość i prędkość</comment>
+              </item>
+              <item id="67fcb00be5c44308b72f453a5088d477" cid="PROP009" type="property" name="_symbol" style-class="" owner="42d1b6ec9bfe47c7aa351882e94ee706" creator="" creation-date="05/15/2022 04:29:09" visibility="private">
+                <feature />
+                <structural-feature type="char" type-id="char" />
+                <property>
+                  <source-codes>
+                    <source-code language="" uid="scs-82f782c4-f1a7-43f6-88cc-753cfedc50cd" />
+                  </source-codes>
+                </property>
+              </item>
+              <item id="fb9a75b24d7d4761ac9819a8286d4381" cid="CMT009" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:11:25">
+                <comment>klasa MapBuilder "buduje" mapę, tworzy obiekty klasy Map. w polu zawierają się zmienne takie jak szerokość mapy (width), długość mapy (height) oraz szansę na przeszkody (chance). Posiada konstruktor tworzący obiekt typu MapBuilder, oraz metodę Build która "buduje" mape. </comment>
+              </item>
+              <item id="25bdae7436584e7185629d7343d66188" cid="CMT008" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:03:45">
+                <comment>klasa Route, tworzy obiekty tras statków, jest tworzona przez klasę RouteBuilder, używa klasy Route Point.
+W polu ma zmienne odpowiadające za trase (path) oraz punkt w którym obecnie znajduje się statek (currentPoint). Posiada konstruktor oraz metody dodawania punktu, przejscia na następny punkt oraz zmany punktu trasy. Oprócz tego posiada metodę aktualizacji trasy</comment>
+              </item>
+              <item id="63c268a83843475bab677774dbae727e" cid="PROP024" type="property" name="speed" style-class="" owner="dffaf50dcacd49a0af3b5047594f95f4" creator="" creation-date="05/15/2022 05:15:45" visibility="public">
+                <stereotypes>
+                  <stereotype name="Optional" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="63c268a83843475bab677774dbae727e_optional_c" type="Optional" />
+                </stereotype-instances>
+                <feature />
+                <structural-feature type="int" type-id="int" />
+                <property default-value="0">
+                  <source-codes>
+                    <source-code language="" uid="scs-d77c29e9-eb41-4536-bef6-3010ed0dcadb" />
+                  </source-codes>
+                </property>
+              </item>
+              <item id="4f9d64e0081647c1a4c9169274d82a52" cid="C010" type="class" name="Glider" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:22:57" visibility="undefined">
+                <operations>
+                  <operation id="obf78b806c3554075875b7423e2ac1390414" cid="OP003" name="Aircraft" creation-date="05/15/2022 04:28:31" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p5678ec9d93ef439ba3149f5facb29b66" name="x" type="int" type-id="int" />
+                      <parameter id="pc83866ef6a424b8f99d470c0c425db42" name="y" type="int" type-id="int" />
+                      <parameter id="p629a89e4be4044dbbf952f248d40d24b" name="path" type="Queue&lt;char&gt;" type-id="Queue&lt;char&gt;" />
+                      <parameter id="p6e4e852e4fea4685bfde18aa697ba191" name="symbol" type="string" type-id="string" />
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="650084ac9f3f4972bf7396c2ddbbd387" cid="CMT010" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/17/2022 00:14:45">
+                <comment>klasa Aircraft tworzy obiekty statków powietrznych, w polu ma trasę (path) oraz symbol. Posiada konstruktor, metodę aktualizacji pozycji oraz metodę dostępową,</comment>
+              </item>
+              <item id="82fa4b3a465d4deaa4d63200cd30b3c6" cid="GNR002" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:09:38" from="42d1b6ec9bfe47c7aa351882e94ee706" to="c0e1c59fc8974afd88586b98ec22ff04" visibility="package" />
+              <item id="42d1b6ec9bfe47c7aa351882e94ee706" cid="C008" type="class" name="Plane" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:09:38" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="67fcb00be5c44308b72f453a5088d477" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a155365349b2b403795e3eda744e2e4e9799" cid="PROP009" name="_symbol" creation-date="05/15/2022 04:29:09" property-ref="67fcb00be5c44308b72f453a5088d477" />
+                </attributes>
+                <operations>
+                  <operation id="o4ed72f602b704ddfaaec1ac78e3ff8c0900" cid="OP002" name="Plane" creation-date="05/15/2022 04:25:47" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p98eec83d5cb342a691d9c6c6c3639a6b" name="x" type="int" type-id="int" />
+                      <parameter id="pfd2299077c9e48dcacd9e6ae9649411d" name="y" type="int" type-id="int" />
+                      <parameter id="pb90a2c8a6693415ca6a487e9893fa354" name="path" type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="1754032499c1411fbcd4630334b3b1d3" cid="CMT003" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:47:27">
+                <comment>klasa Logger jest statyczna, zajmuje się logowaniem (wyświetlaniem na konsole komunikatów i znaków kształtujących mapę oraz statki powietrzne i ich trasy)</comment>
+              </item>
+              <item id="82582aeeb4dd42509403d99b19e8f68c" cid="C009" type="class" name="Helicopter" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:21:51" visibility="undefined">
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="dia8e191a751dd4b2283fb35d757183d8a7051" cid="C012" type="class" name="Helicopter" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:09:38" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="di3a7c2e253be94079b8709739d8824d417051" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a155365349b2b403795e3eda744e2e4e9799" cid="PROP011" name="_symbol" creation-date="05/15/2022 04:29:09" property-ref="di3a7c2e253be94079b8709739d8824d417051" />
+                </attributes>
+                <operations>
+                  <operation id="o4ed72f602b704ddfaaec1ac78e3ff8c0900" cid="OP002" name="Helicopter" creation-date="05/15/2022 04:25:47" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p98eec83d5cb342a691d9c6c6c3639a6b" name="x" type="int" type-id="int" />
+                      <parameter id="pfd2299077c9e48dcacd9e6ae9649411d" name="y" type="int" type-id="int" />
+                      <parameter id="pb90a2c8a6693415ca6a487e9893fa354" name="path" type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="3370c1d0d24540f8bd1077edada057fd" cid="C017" type="class" name="Route" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:43:05" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="0849274207664fabb206aa71ac3e5b3f" />
+                  <owned-item ref="5e91d298fbd44490bf7fbcf0baf6c89d" />
+                  <owned-item ref="0849274207664fabb206aa71ac3e5b3f" />
+                  <owned-item ref="5e91d298fbd44490bf7fbcf0baf6c89d" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a920571fc581943db899f326514abcd7e770" cid="PROP013" name="_path" creation-date="05/15/2022 04:45:05" property-ref="0849274207664fabb206aa71ac3e5b3f" />
+                  <attribute id="a54e0215201f7410b86f8f83d0fb37611367" cid="PROP025" name="_currentPoint" creation-date="05/15/2022 05:19:14" property-ref="5e91d298fbd44490bf7fbcf0baf6c89d" />
+                </attributes>
+                <operations>
+                  <operation id="ocbb5eded603549b49a2806bbfb6c8ee0366" cid="OP025" name="Route" creation-date="05/17/2022 00:07:06" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p066bfa117f83497f8f4f61def810840a" name="Path" type="List&lt;RoutePoint&gt;" type-id="List&lt;RoutePoint&gt;">
+                        <tagged-values>
+                          <tagged-value id="tv5313764fd4a1479eb01afb4d3386e6a3" name="set_Path" type="reference" multiple="false" hidden="false" ref="0849274207664fabb206aa71ac3e5b3f" />
+                        </tagged-values>
+                      </parameter>
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                  </operation>
+                  <operation id="o2ba0b1910d044c4eabda790badf3c878744" cid="OP007" name="AddPoint" creation-date="05/15/2022 04:58:13" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p57aa6cc6250e40b48c07b8e5cd690619" name="p" type="RoutePoint" type-id="Class:dffaf50dcacd49a0af3b5047594f95f4" />
+                    </parameters>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                  <operation id="o3a872f085c3c451caa45e6e5034f4ea4644" cid="OP008" name="Next" creation-date="05/15/2022 05:00:37" type="RoutePoint" type-id="Class:dffaf50dcacd49a0af3b5047594f95f4" visibility="public">
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                  <operation id="odbc369e3688842aaa7afeca68c96ff2b334" cid="OP012" name="AlterRoutePoint" creation-date="05/15/2022 05:09:22" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p1de3d30809c44ddea10bd24dd4598096" name="x" type="int" type-id="int" />
+                      <parameter id="p92c111ec0ebe4209b6a91e763bcc486f" name="y" type="int" type-id="int" />
+                      <parameter id="p7b68a73efd03446c940bc3ebf67ad9a2" name="height" type="int" type-id="int" default-value="0" />
+                      <parameter id="pdc891b0716ba420f88d249d55028a62e" name="speed" type="int" type-id="int" default-value="0" />
+                    </parameters>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                  <operation id="oe5ce2de2d88a41af9fdf8ed7c4bba22d792" cid="OP035" name="Update" creation-date="05/17/2022 00:10:24" type="" type-id="" visibility="public" />
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="di783bc9d79be34f4c84ea096a484921e51643" cid="C011" type="class" name="Glider" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:09:38" visibility="undefined">
+                <owned-items>
+                  <owned-item ref="di05f0f80deedc4d7e929c7bde2f85b6b21643" />
+                </owned-items>
+                <attributes>
+                  <attribute id="a155365349b2b403795e3eda744e2e4e9799" cid="PROP010" name="_symbol" creation-date="05/15/2022 04:29:09" property-ref="di05f0f80deedc4d7e929c7bde2f85b6b21643" />
+                </attributes>
+                <operations>
+                  <operation id="o4ed72f602b704ddfaaec1ac78e3ff8c0900" cid="OP002" name="Glider" creation-date="05/15/2022 04:25:47" type="" type-id="" visibility="public">
+                    <parameters>
+                      <parameter id="p98eec83d5cb342a691d9c6c6c3639a6b" name="x" type="int" type-id="int" />
+                      <parameter id="pfd2299077c9e48dcacd9e6ae9649411d" name="y" type="int" type-id="int" />
+                      <parameter id="pb90a2c8a6693415ca6a487e9893fa354" name="path" type="Route" type-id="Class:3370c1d0d24540f8bd1077edada057fd" />
+                    </parameters>
+                    <stereotypes>
+                      <stereotype>create</stereotype>
+                    </stereotypes>
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="dffaf50dcacd49a0af3b5047594f95f4" cid="C019" type="class" name="RoutePoint" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:46:20" visibility="undefined">
+                <stereotypes>
+                  <stereotype name="struct" />
+                </stereotypes>
+                <stereotype-instances>
+                  <stereotype id="dffaf50dcacd49a0af3b5047594f95f4_struct_c" type="struct" ref="" />
+                </stereotype-instances>
+                <owned-items>
+                  <owned-item ref="d3137f90700444c3b15a15460dfa6bb7" />
+                  <owned-item ref="45c14e8ddd094761b8fe8a8f00f38de3" />
+                  <owned-item ref="380f1768fc51421f8b0a5e1a4d7ccbb3" />
+                  <owned-item ref="63c268a83843475bab677774dbae727e" />
+                  <owned-item ref="d3137f90700444c3b15a15460dfa6bb7" />
+                  <owned-item ref="45c14e8ddd094761b8fe8a8f00f38de3" />
+                  <owned-item ref="380f1768fc51421f8b0a5e1a4d7ccbb3" />
+                </owned-items>
+                <attributes>
+                  <attribute id="ac23de47148794d0885af236783a45b3a731" cid="PROP020" name="x" creation-date="05/15/2022 05:09:36" property-ref="d3137f90700444c3b15a15460dfa6bb7" />
+                  <attribute id="a041274bf9bf340f195c5c47600a25b25374" cid="PROP021" name="y" creation-date="05/15/2022 05:09:47" property-ref="45c14e8ddd094761b8fe8a8f00f38de3" />
+                  <attribute id="a4488876017f0469a9f0e6ba3dfcbd27d877" cid="PROP023" name="height" creation-date="05/15/2022 05:15:01" property-ref="380f1768fc51421f8b0a5e1a4d7ccbb3" />
+                  <attribute id="a9e5440ffdbc2496ab1cf02d427f0eef3133" cid="PROP024" name="speed" creation-date="05/15/2022 05:15:45" property-ref="63c268a83843475bab677774dbae727e" />
+                </attributes>
+                <source-codes>
+                  <source-code language="ActionScript" />
+                </source-codes>
+              </item>
+              <item id="520817a886b44485a5a1f742993ebd9e" cid="CMT004" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:48:56">
+                <comment>klasa Map jest implementacją interfejsu IUiElement, obsługuje wyświetlanie mapy poprzez klasę Logger. 
+pole: statki powietrzne
+metody: konstruktor który tworzy mape ze stringu, dodaje obiekty do mapy, nadpisuje metodę print, aktualizuje mapę oraz wysyła ostrzeżenia o zbliżaniu się statków powietrznych do siebie</comment>
+              </item>
+              <item id="3621cea95b2d48d780305fef1367c701" cid="CMT005" type="comment" name="" style-class="" change-tracking-state="added" creation-date="05/16/2022 23:54:13">
+                <comment>klasa MapItem jest używana przez klasę Map, w polu ma 2 zmienne które określają położeniu obiektu na mapie (statku). 
+metody: tworzenie obiektu mapy z użyciem zmiennych, metody dostępowe oraz aktualizacja położenia obiektu na mapie</comment>
+              </item>
+              <item id="d6afebee60254c95843b56714ad85186" cid="GNR007" type="generalization" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/15/2022 04:35:53" from="di783bc9d79be34f4c84ea096a484921e51643" to="c0e1c59fc8974afd88586b98ec22ff04" visibility="package" />
+            </abstract-items>
+            <layer id="d82de3ec3c9a4676813c8e929d30a864" name="Default" visible="true" enabled="true" locked="false">
+              <item id="59b4e7ab51114f5faab26c01da4e455e" iid="4a75a1c742d747bfac94ff1d49ebb4d4" creation-date="05/15/2022 04:00:54" order-index="1" type="entity">
+                <layout ax="53.5" ay="177.5" awidth="211" aheight="155" x="53.5" y="177.5" width="211" height="155" />
+                <classifier />
+                <class />
+              </item>
+              <item id="39a19fbf39bf46a7bb0598378fcaa615" iid="5c45f4205e7a4b29a2b0db88c297837d" creation-date="05/15/2022 04:00:54" order-index="2" type="entity">
+                <layout ax="364.5" ay="178" awidth="341" aheight="173" x="364.5" y="178" width="341" height="154" />
+                <classifier />
+                <class />
+              </item>
+              <item id="9ae6c67ec1e044aca42a0148a477f410" iid="7e6d2b3a760a46b7b28a09d39a628c10" creation-date="05/15/2022 04:00:54" order-index="3" type="entity">
+                <layout ax="725.5" ay="178" awidth="303" aheight="79" x="725.5" y="178" width="303" height="79" />
+                <classifier />
+                <class />
+              </item>
+              <item id="9e3b22362c9b4a77ad51b5c6c66f0515" iid="2ffcb88414f74426a2687493d50bce48" creation-date="05/15/2022 04:00:54" order-index="4" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="534" y1="178" x2="696" y2="78" start-border-pos="0.1245" end-border-pos="0.625810526315789" name-position="0,20">
+                  <points>
+                    <point x="534" y="178" />
+                    <point x="535" y="128" />
+                    <point x="696" y="128" />
+                    <point x="696" y="78" />
+                  </points>
+                </layout>
+                <relation from="39a19fbf39bf46a7bb0598378fcaa615" from-iid="5c45f4205e7a4b29a2b0db88c297837d" to="ac4f40c9f0954435b5d6af0edca30806" to-iid="8fb8041636004c5298a24b8bdd0630dc" />
+              </item>
+              <item id="f8bf4616faf4406e84de966846ca1724" iid="5849c54eadd9458c96c42f9c8030e3f0" creation-date="05/15/2022 04:00:54" order-index="6" type="entity">
+                <layout ax="365.5" ay="423.5" awidth="339" aheight="171" x="365.5" y="423.5" width="339" height="154" />
+                <classifier />
+                <class />
+              </item>
+              <item id="7de093217d324b4ba71abc7df5a440b5" iid="8d5748850fde447b8dce99a833327702" creation-date="05/15/2022 04:00:54" order-index="7" type="entity">
+                <layout ax="804" ay="377.5" awidth="311" aheight="191" x="804" y="377.5" width="311" height="191" />
+                <classifier />
+                <class />
+              </item>
+              <item id="c0e1c59fc8974afd88586b98ec22ff04" iid="b46fa67bbf3c4378a38de784a2418075" creation-date="05/15/2022 04:00:54" order-index="8" type="entity">
+                <layout ax="0" ay="432.5" awidth="331" aheight="136" x="0" y="432.5" width="318" height="98" />
+                <classifier />
+                <class />
+              </item>
+              <item id="486bce33fa314f54a25abeb30cb3dc1c" iid="89dff62d5d7e44e8b989d01fc9d5b99f" creation-date="05/15/2022 04:00:54" order-index="10" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="876" y1="178" x2="696" y2="78" start-border-pos="0.1245" end-border-pos="0.625810526315789" name-position="0,20">
+                  <points>
+                    <point x="876" y="178" />
+                    <point x="877" y="128" />
+                    <point x="696" y="128" />
+                    <point x="696" y="78" />
+                  </points>
+                </layout>
+                <relation from="9ae6c67ec1e044aca42a0148a477f410" from-iid="7e6d2b3a760a46b7b28a09d39a628c10" to="ac4f40c9f0954435b5d6af0edca30806" to-iid="8fb8041636004c5298a24b8bdd0630dc" />
+              </item>
+              <item id="ac4f40c9f0954435b5d6af0edca30806" iid="8fb8041636004c5298a24b8bdd0630dc" creation-date="05/15/2022 04:00:54" order-index="11" type="entity">
+                <layout ax="649" ay="0" awidth="95" aheight="78" x="649" y="0" width="95" height="78" />
+                <classifier />
+                <class />
+              </item>
+              <item id="72342be06a9b45288f6bbb19ccf2cddb" iid="4bdf364802934ae1a973be24da580af3" creation-date="05/15/2022 04:00:54" order-index="12" type="relation">
+                <layout line-style="perpendicular" lock-to-fields="false" auto-path="" x1="158" y1="432" x2="159" y2="332" start-border-pos="0.119610271903323" end-border-pos="0.6245" name-position="0,20">
+                  <points>
+                    <point x="158" y="432" />
+                    <point x="159" y="382" />
+                    <point x="159" y="382" />
+                    <point x="159" y="332" />
+                  </points>
+                </layout>
+                <relation from="c0e1c59fc8974afd88586b98ec22ff04" from-iid="b46fa67bbf3c4378a38de784a2418075" to="59b4e7ab51114f5faab26c01da4e455e" to-iid="4a75a1c742d747bfac94ff1d49ebb4d4" />
+              </item>
+              <item id="c283bbe6251e4f4ab2727b0f4b94008a" iid="fb751ead1d044390997579c09440fb2d" creation-date="05/15/2022 04:07:30" order-index="13" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="264" y1="258" x2="364" y2="260" start-border-pos="0.379053718813004" end-border-pos="0.881637396840002" name-position="0,20">
+                  <points>
+                    <point x="264" y="258" />
+                    <point x="364" y="260" />
+                  </points>
+                </layout>
+                <relation from="59b4e7ab51114f5faab26c01da4e455e" from-iid="4a75a1c742d747bfac94ff1d49ebb4d4" to="39a19fbf39bf46a7bb0598378fcaa615" to-iid="5c45f4205e7a4b29a2b0db88c297837d" />
+              </item>
+              <item id="42d1b6ec9bfe47c7aa351882e94ee706" iid="6a4bbcd2d978465288f541611347f404" creation-date="05/15/2022 04:09:38" order-index="14" type="entity">
+                <layout ax="201" ay="619.5" awidth="120" aheight="120" x="201" y="619.5" width="120" height="120" rotation-center="99,-11" />
+                <classifier />
+                <class />
+              </item>
+              <item id="82fa4b3a465d4deaa4d63200cd30b3c6" iid="5bf92794a5cc47f5a9ce75190a34cf15" creation-date="05/15/2022 04:09:38" order-index="15" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="229" y1="620" x2="202" y2="568" start-border-pos="0.0590277671813965" end-border-pos="0.597515947509028" name-position="0,20">
+                  <points>
+                    <point x="229" y="620" />
+                    <point x="202" y="568" />
+                  </points>
+                </layout>
+                <relation from="42d1b6ec9bfe47c7aa351882e94ee706" from-iid="6a4bbcd2d978465288f541611347f404" to="c0e1c59fc8974afd88586b98ec22ff04" to-iid="b46fa67bbf3c4378a38de784a2418075" />
+              </item>
+              <item id="di783bc9d79be34f4c84ea096a484921e51643" iid="806ed87e62d44c0c94a7a1f25c23b9ce" creation-date="05/15/2022 04:09:38" order-index="14" type="entity">
+                <layout ax="351.5" ay="619.5" awidth="115" aheight="120" x="351.5" y="619.5" width="115" height="120" rotation-center="101.5,-11" />
+                <classifier />
+                <class />
+              </item>
+              <item id="dia8e191a751dd4b2283fb35d757183d8a7051" iid="8f85d37a0d2e406496301086fddd6cb1" creation-date="05/15/2022 04:09:38" order-index="14" type="entity">
+                <layout ax="32.5" ay="619.5" awidth="138" aheight="120" x="32.5" y="619.5" width="138" height="120" rotation-center="90,-11" />
+                <classifier />
+                <class />
+              </item>
+              <item id="di85da09e4995d4c479ac58a9043c8ace04914" iid="898ceb9b2858441fb4ce93a8cdb4f929" creation-date="05/15/2022 04:09:38" order-index="14" type="entity">
+                <layout ax="-169" ay="619.5" awidth="171" aheight="120" x="-169" y="619.5" width="171" height="120" rotation-center="73.5,-11" />
+                <classifier />
+                <class />
+              </item>
+              <item id="229a11bbb3664b6b8bbafd865801e872" iid="f481a25916844264b508f500015995a8" creation-date="05/15/2022 04:35:45" order-index="16" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="-1" y1="620" x2="72" y2="568" start-border-pos="0.246101368240446" end-border-pos="0.695955017182042" name-position="0,20">
+                  <points>
+                    <point x="-1" y="620" />
+                    <point x="72" y="568" />
+                  </points>
+                </layout>
+                <relation from="di85da09e4995d4c479ac58a9043c8ace04914" from-iid="898ceb9b2858441fb4ce93a8cdb4f929" to="c0e1c59fc8974afd88586b98ec22ff04" to-iid="b46fa67bbf3c4378a38de784a2418075" />
+              </item>
+              <item id="3a38fc8ddbb340838c75f5acaf429b5e" iid="3c790b348aaf412fb41bae25b219e1a1" creation-date="05/15/2022 04:35:51" order-index="17" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="123" y1="620" x2="142" y2="568" start-border-pos="0.164553144703741" end-border-pos="0.642883519751788" name-position="0,20">
+                  <points>
+                    <point x="123" y="620" />
+                    <point x="142" y="568" />
+                  </points>
+                </layout>
+                <relation from="dia8e191a751dd4b2283fb35d757183d8a7051" from-iid="8f85d37a0d2e406496301086fddd6cb1" to="c0e1c59fc8974afd88586b98ec22ff04" to-iid="b46fa67bbf3c4378a38de784a2418075" />
+              </item>
+              <item id="d6afebee60254c95843b56714ad85186" iid="6369d09b29b04f6d9d79320e43bbb905" creation-date="05/15/2022 04:35:53" order-index="18" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="352" y1="637" x2="258" y2="568" start-border-pos="0.963464482625326" end-border-pos="0.555287018283256" name-position="0,20">
+                  <points>
+                    <point x="352" y="637" />
+                    <point x="258" y="568" />
+                  </points>
+                </layout>
+                <relation from="di783bc9d79be34f4c84ea096a484921e51643" from-iid="806ed87e62d44c0c94a7a1f25c23b9ce" to="c0e1c59fc8974afd88586b98ec22ff04" to-iid="b46fa67bbf3c4378a38de784a2418075" />
+              </item>
+              <item id="di84d2e9665a6d4c8c90270513f2a4effb4066" iid="9f8b9fd8507043ba83d5ccd821b20241" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:22:53" order-index="4" type="relation">
+                <layout line-style="oblique" start-auto-side="false" lock-to-fields="false" auto-path="" x1="535" y1="424" x2="535" y2="351" start-border-pos="0.125" end-border-pos="0.625" start-local-pos="169.5" end-local-pos="79" name-position="0,-20">
+                  <points>
+                    <point x="535" y="424" />
+                    <point x="535" y="351" />
+                  </points>
+                </layout>
+                <relation from="f8bf4616faf4406e84de966846ca1724" from-iid="5849c54eadd9458c96c42f9c8030e3f0" to="39a19fbf39bf46a7bb0598378fcaa615" to-iid="5c45f4205e7a4b29a2b0db88c297837d" />
+              </item>
+              <item id="3370c1d0d24540f8bd1077edada057fd" iid="f59ef581dd464af999f8ca0b64261f0f" creation-date="05/15/2022 04:43:05" order-index="19" type="entity">
+                <layout ax="-415" ay="414" awidth="360" aheight="192" x="-415" y="414" width="140" height="160" />
+                <classifier />
+                <class />
+              </item>
+              <item id="bb9fa52b1f224b43b78affdfae728fc6" iid="e4f137cadec74b5798aa4b6d14abf6bf" creation-date="05/15/2022 04:43:26" order-index="20" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="-55" y1="506" x2="0" y2="504" start-border-pos="0.369155248006185" end-border-pos="0.868309469784007" name-position="0,20">
+                  <points>
+                    <point x="-55" y="506" />
+                    <point x="0" y="504" />
+                  </points>
+                </layout>
+                <relation from="3370c1d0d24540f8bd1077edada057fd" from-iid="f59ef581dd464af999f8ca0b64261f0f" to="c0e1c59fc8974afd88586b98ec22ff04" to-iid="b46fa67bbf3c4378a38de784a2418075" />
+              </item>
+              <item id="b9e54f2bb9e347caaaa2b8ff71f791ad" iid="d0178617091f48bb8df1a8868b7e69a6" creation-date="05/15/2022 04:43:49" order-index="21" type="entity">
+                <layout ax="-560" ay="187.5" awidth="320" aheight="154" x="-560" y="187.5" width="230" height="133.5" />
+                <classifier />
+                <class />
+              </item>
+              <item id="diedc0e44b700a498c8d27d225a95281217257" iid="334541ae2f4d4eeb90948709700f67d1" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:22:53" order-index="4" type="relation">
+                <layout line-style="oblique" start-auto-side="false" lock-to-fields="false" auto-path="" x1="-348" y1="342" x2="-299" y2="414" start-border-pos="0.584651303291321" end-border-pos="0.0802845425075955" start-local-pos="113" end-local-pos="159" name-position="0,-20">
+                  <points>
+                    <point x="-348" y="342" />
+                    <point x="-299" y="414" />
+                  </points>
+                </layout>
+                <relation from="b9e54f2bb9e347caaaa2b8ff71f791ad" from-iid="d0178617091f48bb8df1a8868b7e69a6" to="3370c1d0d24540f8bd1077edada057fd" to-iid="f59ef581dd464af999f8ca0b64261f0f" />
+              </item>
+              <item id="456f6dcb51ab429f86867991110b65df" iid="6a9119d80dde4706a4f733eb11b950bd" creation-date="05/15/2022 04:48:44" order-index="23" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="-143" y1="342" x2="-182" y2="414" start-border-pos="0.678506088256836" end-border-pos="0.161585362752279" name-position="0,20">
+                  <points>
+                    <point x="-143" y="342" />
+                    <point x="-182" y="414" />
+                  </points>
+                </layout>
+                <relation from="dffaf50dcacd49a0af3b5047594f95f4" from-iid="fcdd58c426ef447d90f147ffe050ba52" to="3370c1d0d24540f8bd1077edada057fd" to-iid="f59ef581dd464af999f8ca0b64261f0f" />
+              </item>
+              <item id="dffaf50dcacd49a0af3b5047594f95f4" iid="fcdd58c426ef447d90f147ffe050ba52" creation-date="05/15/2022 04:46:20" order-index="22" type="entity">
+                <layout ax="-200" ay="187" awidth="200" aheight="155" x="-200" y="187" width="200" height="155" rotation-center="-11.5,-2.25" />
+                <classifier />
+                <class />
+              </item>
+              <item id="9aa3d607bcfa498aa7f3f72329250fbf" iid="437c24bb6a6042869788c617f7e5bd70" creation-date="05/16/2022 23:45:09" order-index="24" type="entity">
+                <layout ax="1048.5" ay="167.5" awidth="273" aheight="101" x="1053" y="170" width="140" height="100" />
+              </item>
+              <item id="f1b053a11e51426fad689b84b787d4f5" iid="1b0397d3c96f4567b413ef324572682b" creation-date="05/16/2022 23:46:14" order-index="25" type="entity">
+                <layout ax="807" ay="0" awidth="305" aheight="101" x="807" y="9" width="140" height="100" />
+              </item>
+              <item id="1754032499c1411fbcd4630334b3b1d3" iid="b6e95542abe44c449e4adf4136799c1b" creation-date="05/16/2022 23:47:27" order-index="26" type="entity">
+                <layout ax="1076" ay="331.5" awidth="301" aheight="101" x="1076" y="328" width="140" height="100" />
+              </item>
+              <item id="520817a886b44485a5a1f742993ebd9e" iid="f2236089ee4340dfa0bb5a0dca7c9e13" creation-date="05/16/2022 23:48:56" order-index="27" type="entity">
+                <layout ax="321" ay="23.5" awidth="309" aheight="144" x="321" y="23.5" width="140" height="100" />
+              </item>
+              <item id="3621cea95b2d48d780305fef1367c701" iid="8670210beae945c1a0554749b1dd8ac1" creation-date="05/16/2022 23:54:13" order-index="28" type="entity">
+                <layout ax="3" ay="57.5" awidth="299" aheight="110" x="3" y="57.5" width="140" height="100" />
+              </item>
+              <item id="009c2756045e45b393702667b105d2e1" iid="01747411ed5e493b8b0294b4da10748c" creation-date="05/16/2022 23:57:05" order-index="29" type="entity">
+                <layout ax="-302" ay="62" awidth="286" aheight="101" x="-302" y="62" width="140" height="100" />
+              </item>
+              <item id="b470a2e0a6774703b8fc5fba2625cd2f" iid="54fa5133fd0242249c808dde38135e30" creation-date="05/16/2022 23:59:05" order-index="30" type="entity">
+                <layout ax="-628" ay="62" awidth="307" aheight="101" x="-628" y="62" width="140" height="100" />
+              </item>
+              <item id="163d6708a8e64aa4b7de7e3412c74736" iid="848c319e574e4d8ea426507052d77e7c" creation-date="05/17/2022 00:02:40" order-index="31" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="-200" y1="264" x2="-240" y2="264" start-border-pos="0.875806451612903" end-border-pos="0.374188311688312" name-position="0,20">
+                  <points>
+                    <point x="-200" y="264" />
+                    <point x="-240" y="264" />
+                  </points>
+                </layout>
+                <relation from="dffaf50dcacd49a0af3b5047594f95f4" from-iid="fcdd58c426ef447d90f147ffe050ba52" to="b9e54f2bb9e347caaaa2b8ff71f791ad" to-iid="d0178617091f48bb8df1a8868b7e69a6" />
+              </item>
+              <item id="af3abfe3aeb14ced933ef866d12f9902" iid="ebf2993178e640d58fe006f3aa4449e3" creation-date="05/17/2022 00:03:19" order-index="32" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="929" y1="378" x2="890" y2="257" start-border-pos="0.100545361877638" end-border-pos="0.614526326900268" name-position="0,20">
+                  <points>
+                    <point x="929" y="378" />
+                    <point x="890" y="257" />
+                  </points>
+                </layout>
+                <relation from="7de093217d324b4ba71abc7df5a440b5" from-iid="8d5748850fde447b8dce99a833327702" to="9ae6c67ec1e044aca42a0148a477f410" to-iid="7e6d2b3a760a46b7b28a09d39a628c10" />
+              </item>
+              <item id="1cdb6de04bbb451093f5ef5798944cd9" iid="00b47532a971432992aec94630427dce" creation-date="05/17/2022 00:03:28" order-index="33" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="804" y1="396" x2="706" y2="348" start-border-pos="0.975412698316324" end-border-pos="0.495086714022421" name-position="0,20">
+                  <points>
+                    <point x="804" y="396" />
+                    <point x="706" y="348" />
+                  </points>
+                </layout>
+                <relation from="7de093217d324b4ba71abc7df5a440b5" from-iid="8d5748850fde447b8dce99a833327702" to="39a19fbf39bf46a7bb0598378fcaa615" to-iid="5c45f4205e7a4b29a2b0db88c297837d" />
+              </item>
+              <item id="25bdae7436584e7185629d7343d66188" iid="293494968caa42d5b3812f3ea865bb6a" creation-date="05/17/2022 00:03:45" order-index="34" type="entity">
+                <layout ax="-757" ay="428.5" awidth="309" aheight="162" x="-757" y="428.5" width="140" height="100" />
+              </item>
+              <item id="fb9a75b24d7d4761ac9819a8286d4381" iid="3917f1f4ccc8499ab94155b72ddad96c" creation-date="05/17/2022 00:11:25" order-index="35" type="entity">
+                <layout ax="649" ay="568.5" awidth="303" aheight="110" x="649" y="568.5" width="140" height="100" />
+              </item>
+              <item id="650084ac9f3f4972bf7396c2ddbbd387" iid="77e680d6dd67451c906f655b91eb4468" creation-date="05/17/2022 00:14:45" order-index="36" type="entity">
+                <layout ax="-130" ay="351" awidth="259.5" aheight="101" x="-130" y="351" width="259.5" height="100" rotation-center="23.75,0" />
+              </item>
+              <item id="b691f97d631d4920bd8cb228efec7c3a" iid="6fdcd03f716a4dd582005db69802ea32" creation-date="05/17/2022 00:16:51" order-index="37" type="entity">
+                <layout ax="-115.5" ay="774" awidth="286" aheight="127" x="-115.5" y="774" width="140" height="100" />
+              </item>
+            </layer>
+          </diagram>
+          <diagram type="uml-class" id="pda2df98826bd4788abd6f39546d15b93_536699148" name="ClassDiagram2" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="0,270">
+            <style>
+              <background-color index="1" color="#FFFFFFFF" />
+              <background-color index="2" color="#FFFFFFFF" />
+              <background-type type="solid" />
+            </style>
+            <meta>
+              <authors>
+                <author> </author>
+              </authors>
+              <description />
+              <creation-date>05/15/2022 04:39:34</creation-date>
+              <change-date>05/15/2022 04:39:34</change-date>
+              <revision-count>0</revision-count>
+              <version />
+            </meta>
+            <abstract-items>
+              <item id="di382121973741838642" cid="C015" type="class" name="Product" style-class="" creator="" creation-date="03/31/2013 16:22:33" visibility="undefined" />
+              <item id="di286163436590988576" cid="C016" type="class" name="Creator" style-class="" creator="" creation-date="03/31/2013 16:21:11" visibility="undefined" is-abstract="true">
+                <documentations>
+                  <doc id="67a15deeb0c1400393ecd0ba72808765">
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles>
+                        <style name="S1" font-name="Calibri" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </styles>
+                      <content>
+                        <paragraph>
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
+                          <p s="S1">
+                            <t>
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </doc>
+                </documentations>
+                <operations>
+                  <operation id="oea2497b2f6ba4af589fd9b7eee64c615786" cid="OP001" name="factoryMethod" creation-date="05/15/2022 03:59:52" type="Product" type-id="Product" visibility="public" abstract="true">
+                    <source-codes>
+                      <source-code language="ActionScript" />
+                    </source-codes>
+                  </operation>
+                </operations>
+              </item>
+              <item id="di437163953951886347" cid="DEP004" type="dependency" name="" style-class="" creator="" creation-date="03/31/2013 16:22:53" from="di569588636999800738" to="di382121973741838642" visibility="undefined">
+                <stereotypes>
+                  <stereotype name="create" />
+                </stereotypes>
+                <documentations>
+                  <doc id="2117b04abbb14e1d85d17aa0d0e6f939">
+                    <text>
+                      <default>
+                        <style font-name="Verdana" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </default>
+                      <styles>
+                        <style name="S1" font-name="Calibri" font-size="12">
+                          <text>
+                            <solid-brush color="#FF000000" />
+                          </text>
+                        </style>
+                      </styles>
+                      <content>
+                        <paragraph>
+                          <style numbering-type="None">
+                            <numbering name="" multi-level="false">
+                              <numbering-level type="None" level="0" format="{0}." />
+                            </numbering>
+                          </style>
+                          <p s="S1">
+                            <t>
+</t>
+                          </p>
+                        </paragraph>
+                      </content>
+                    </text>
+                  </doc>
+                </documentations>
+                <stereotype-instances>
+                  <stereotype id="di437163953951886347_create_c" type="create" ref="" />
+                </stereotype-instances>
+              </item>
+              <item id="di496711476422882651" cid="GNR008" type="generalization" name="" style-class="" creator="" creation-date="03/31/2013 16:22:24" from="di569588636999800738" to="di286163436590988576" visibility="undefined" />
+              <item id="di569588636999800738" cid="C014" type="class" name="ConcreteCreator" style-class="" creator="" creation-date="03/31/2013 16:21:13" visibility="undefined">
+                <operations>
+                  <operation id="o2b9e3d7aae52447b8116fbb43e61602c318" cid="OP002" name="factoryMethod" creation-date="05/15/2022 03:59:52" type="Product" type-id="Product" visibility="public" />
+                </operations>
+              </item>
+            </abstract-items>
+            <layer id="a52e054582f1477aa51c084008b26e8f" name="Default" visible="true" enabled="true" locked="false">
+              <item id="di496711476422882651" iid="7ad71834737649e5ad84f8a23a6cf37c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:22:24" order-index="2" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="310" y1="380" x2="310" y2="260" start-border-pos="0.125" end-border-pos="0.625" name-position="10,-10">
+                  <points>
+                    <point x="310" y="380" />
+                    <point x="310" y="260" />
+                  </points>
+                </layout>
+                <relation from="di569588636999800738" from-iid="50ea1778caea45a1b5e52e9f5ab1911b" to="di286163436590988576" to-iid="079b723c5be04680b72cc2498972e50c" />
+              </item>
+              <item id="di569588636999800738" iid="50ea1778caea45a1b5e52e9f5ab1911b" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:21:13" order-index="1" type="entity">
+                <layout ax="210" ay="380" awidth="200" aheight="140" x="210" y="380" width="200" height="140" />
+                <classifier />
+                <class />
+              </item>
+              <item id="di437163953951886347" iid="ad6c19edba554884a17d0d09c2094647" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:22:53" order-index="4" type="relation">
+                <layout line-style="oblique" lock-to-fields="false" auto-path="" x1="410" y1="450" x2="540" y2="450" start-border-pos="0.375" end-border-pos="0.875" name-position="0,-20">
+                  <points>
+                    <point x="410" y="450" />
+                    <point x="540" y="450" />
+                  </points>
+                </layout>
+                <relation from="di569588636999800738" from-iid="50ea1778caea45a1b5e52e9f5ab1911b" to="di382121973741838642" to-iid="c4aa51036bc14c5ca8127347a4c8eccb" />
+              </item>
+              <item id="di382121973741838642" iid="c4aa51036bc14c5ca8127347a4c8eccb" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:22:33" order-index="3" type="entity">
+                <layout ax="540" ay="380" awidth="140" aheight="140" x="540" y="380" width="0" height="140" />
+                <classifier />
+                <class />
+              </item>
+              <item id="di286163436590988576" iid="079b723c5be04680b72cc2498972e50c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="03/31/2013 16:21:11" order-index="0" type="entity">
+                <layout ax="210" ay="120" awidth="200" aheight="140" x="210" y="120" width="200" height="140" />
+                <classifier />
+                <class />
+              </item>
+            </layer>
+          </diagram>
+        </model>
+      </sub-models>
+      <diagram type="uml-package" id="p98375a3d9ae74315b432d2b4354b0da6_769635110" name="Packages" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" namespace="">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="vertical-linear" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>05/15/2022 04:00:54</creation-date>
+          <change-date>05/15/2022 04:00:54</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values>
+          <tagged-value id="tv8813d2d159c14250b8703f3f972b4202" name="ReverseEngineered" type="text" multiple="false" hidden="true" value="" />
+        </tagged-values>
+        <abstract-items />
+        <layer id="7ccc2acaa38243e7ae9f777de6d26539" name="Default" visible="true" enabled="true" locked="false">
+          <item id="54d450dc6b0740598b62266461c0a55b" iid="841509d432aa4afea0ebbb150a21c064" creation-date="05/15/2022 04:00:54" order-index="0" type="entity">
+            <layout ax="0" ay="0" awidth="84" aheight="56" x="0" y="0" width="84" height="56" expanded="0,0,84,56" collapsed="0,0,0,0" />
+            <package name-in-body="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
