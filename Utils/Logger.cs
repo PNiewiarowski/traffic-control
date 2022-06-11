@@ -1,6 +1,6 @@
 using TrafficController.Map;
 using TrafficController.Plane;
-using TrafficController.UI;
+using TrafficController.Ui;
 
 namespace TrafficController.Utils;
 

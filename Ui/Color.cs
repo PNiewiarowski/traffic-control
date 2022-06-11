@@ -1,4 +1,4 @@
-namespace TrafficController.UI;
+namespace TrafficController.Ui;
 
 public enum Color
 {

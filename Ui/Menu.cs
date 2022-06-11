@@ -1,6 +1,6 @@
 using TrafficController.Utils;
 
-namespace TrafficController.UI;
+namespace TrafficController.Ui;
 
 public class Menu : List<string>
 {
