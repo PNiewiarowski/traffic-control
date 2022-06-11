@@ -1,8 +1,7 @@
-using TrafficController.UI;
 using TrafficController.Utils;
-using Color = TrafficController.UI.Color;
+using TrafficController.UI;
 
-namespace TrafficController.Classes;
+namespace TrafficController.Map;
 
 public class Map
 {
@@ -17,10 +16,7 @@ public class Map
             .Select(line => line.ToCharArray()).ToArray();
     }
 
-    public void AddItemToRender(MapItem item)
-    {
-        _itemsToRender.Add(item);
-    }
+    public void AddItemToRender(MapItem item) => _itemsToRender.Add(item);
 
     public void Print()
     {
@@ -55,8 +51,5 @@ public class Map
         }
     }
 
-    public void UpdateItems()
-    {
-        _itemsToRender.ForEach(i => i.Update());
-    }
+    public void UpdateItems() => _itemsToRender.ForEach(i => i.Update());
 }

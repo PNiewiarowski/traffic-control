@@ -1,4 +1,6 @@
-namespace TrafficController.Classes;
+using TrafficController.Classes;
+
+namespace TrafficController.Map;
 
 public static class MapLoader
 {

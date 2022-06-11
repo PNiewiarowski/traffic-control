@@ -1,4 +1,4 @@
-namespace TrafficController.Classes;
+namespace TrafficController.Map;
 
 public abstract class MapItem
 {

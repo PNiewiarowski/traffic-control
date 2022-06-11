@@ -1,3 +1,5 @@
+using TrafficController.Map;
+
 namespace TrafficController.Classes;
 
 public class Plane : MapItem
