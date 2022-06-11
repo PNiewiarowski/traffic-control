@@ -1,8 +1,8 @@
-namespace TrafficController.Enums;
+namespace TrafficController.UI;
 
 public enum Color
 {
     BackgroundSky = ConsoleColor.Cyan,
-    BackgroundNotSky = ConsoleColor.Blue,
-    PlaneForeground = ConsoleColor.Red,
+    BackgroundObstacle = ConsoleColor.Black,
+    ForegroundPlane = ConsoleColor.Red,
 }

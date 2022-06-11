@@ -1,4 +1,4 @@
-using TrafficController.Enums;
+using TrafficController.UI;
 
 namespace TrafficController.Utils;
 
@@ -38,7 +38,7 @@ public static class Logger
     public static void LogPlane()
     {
         Console.BackgroundColor = (ConsoleColor) Color.BackgroundSky;
-        Console.ForegroundColor = (ConsoleColor) Color.PlaneForeground;
+        Console.ForegroundColor = (ConsoleColor) Color.ForegroundPlane;
         Log("V");
     }
 

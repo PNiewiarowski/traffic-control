@@ -1,10 +1,10 @@
-using TrafficController.Interfaces;
+using TrafficController.UI;
 using TrafficController.Utils;
-using Color = TrafficController.Enums.Color;
+using Color = TrafficController.UI.Color;
 
 namespace TrafficController.Classes;
 
-public class Map : IUiElement
+public class Map
 {
     private readonly char[][] _map;
     private readonly List<MapItem> _itemsToRender;
@@ -43,7 +43,7 @@ public class Map : IUiElement
                         Logger.Log((ConsoleColor) Color.BackgroundSky, cell.ToString());
                         break;
                     case 'X':
-                        Logger.Log((ConsoleColor) Color.BackgroundNotSky, cell.ToString());
+                        Logger.Log((ConsoleColor) Color.BackgroundObstacle, cell.ToString());
                         break;
                     default:
                         Logger.Log((ConsoleColor) Color.BackgroundSky, cell.ToString());
