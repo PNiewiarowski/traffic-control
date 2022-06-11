@@ -5,7 +5,7 @@ z obiektami nieporuszającymi się, zaś na radarze możemy umieścić różne r
 (samoloty, śmigłowce, balony, szybowce) reprezentowane przez odpowiednie znaki graficzne. Każdy statek powietrzny ma
 swoją trasę (złożoną z odcinków o stałych parametrów lotu: wysokość, kierunek, prędkość). Program powinien cyklicznie
 sprawdzać i sygnalizować niebezpieczne zbliżenia oraz kolizje między statkami. Program powinien umożliwiać modyfikowanie
-tras lotów statków pow
+tras lotów statków powietrznych.
 
 * wczytywanie i wyświetlanie mapy (może być w formie tekstowej) wraz z obiektami (naziemnymi i ruchomymi).
 * losowe generowanie statków powietrznych oraz ich tras

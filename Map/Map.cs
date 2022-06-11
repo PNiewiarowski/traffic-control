@@ -1,4 +1,3 @@
-using TrafficController.Plane;
 using TrafficController.Utils;
 using TrafficController.Ui;
 
@@ -7,9 +6,9 @@ namespace TrafficController.Map;
 public class Map
 {
     private readonly char[][] _map;
-    private List<Aircraft> _aircraft;
+    private List<Aircraft.Aircraft> _aircraft;
 
-    public Map(string map, List<Aircraft> aircraft)
+    public Map(string map, List<Aircraft.Aircraft> aircraft)
     {
         _aircraft = aircraft;
         _map = map
@@ -17,7 +16,11 @@ public class Map
             .Select(line => line.ToCharArray()).ToArray();
     }
 
-    public void AddItemToRender(Aircraft item) =>
+    public int GetMapHeight() => _map.Length;
+
+    public int GetMapWidth() => _map[0].Length;
+
+    public void AddItemToRender(Aircraft.Aircraft item) =>
         _aircraft.Add(item);
 
     public int CountAllItems() =>
@@ -32,11 +35,13 @@ public class Map
         }
     }
 
-    private bool CheckCollision(int x, int y)
+    private bool CheckCollision(int x, int y, int elementsOnSport = 2)
     {
         try
         {
-            var collision = _map[y][x] == 'X' || _aircraft.Where(item => item.X == x && item.Y == y).ToList().Count > 1;
+            var collision =
+                _map[y][x] == 'X' ||
+                _aircraft.Where(item => item.X == x && item.Y == y).ToList().Count >= elementsOnSport;
             return collision;
         }
         catch (IndexOutOfRangeException)
@@ -45,21 +50,21 @@ public class Map
         }
     }
 
-    private void Collision(Aircraft item)
+    private void Collision(Aircraft.Aircraft item)
     {
         if (CheckCollision(item.X, item.Y))
             DeleteItemByPosition(item.X, item.Y);
     }
 
     private bool CheckWarning(int x, int y) =>
-        CheckCollision(x + 1, y) ||
-        CheckCollision(x - 1, y) ||
-        CheckCollision(x, y - 1) ||
-        CheckCollision(x, y + 1) ||
-        CheckCollision(x - 1, y - 1) ||
-        CheckCollision(x - 1, y + 1) ||
-        CheckCollision(x + 1, y - 1) ||
-        CheckCollision(x + 1, y + 1);
+        CheckCollision(x + 1, y, 1) ||
+        CheckCollision(x - 1, y, 1) ||
+        CheckCollision(x, y - 1, 1) ||
+        CheckCollision(x, y + 1, 1) ||
+        CheckCollision(x - 1, y - 1, 1) ||
+        CheckCollision(x - 1, y + 1, 1) ||
+        CheckCollision(x + 1, y - 1, 1) ||
+        CheckCollision(x + 1, y + 1, 1);
 
     public void Print()
     {
@@ -106,12 +111,21 @@ public class Map
     public void UpdateItems() =>
         _aircraft.ForEach(item =>
         {
+            if (item.Path.Route.Count == 0)
+            {
+                DeleteItemByUuid(item.Uuid);
+                return;
+            }
+
             item.Update();
             Collision(item);
         });
 
-    public void UpdateItemPath(string? uuid, Queue<char> path) =>
-        _aircraft.First(aircraft => aircraft.Uuid == uuid).ChangePath(path);
+    public void UpdateItemPath(string? uuid, Queue<char> path)
+    {
+        var aircraft = _aircraft.First(aircraft => aircraft.Uuid == uuid);
+        aircraft.ChangePath(new Path.Path(aircraft.Path.Velocity, aircraft.Path.Height, path));
+    }
 
     public void DeleteItemByUuid(string? uuid) =>
         _aircraft = _aircraft.Where(item => item.Uuid != uuid).ToList();

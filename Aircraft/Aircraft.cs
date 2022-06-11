@@ -1,24 +1,24 @@
 using TrafficController.Map;
 using TrafficController.Path;
 
-namespace TrafficController.Plane;
+namespace TrafficController.Aircraft;
 
 public class Aircraft : MapItem
 {
-    private Queue<char> _path;
+    public Path.Path Path;
     public bool Warned;
 
-    public Aircraft(int x, int y, Queue<char> path) : base(x, y)
+    public Aircraft(int x, int y, Path.Path path) : base(x, y)
     {
-        _path = path;
+        Path = path;
         Symbol = (char) AircraftSymbol.Undefined;
     }
 
-    public void ChangePath(Queue<char> path) => _path = path;
+    public void ChangePath(Path.Path path) => Path = path;
 
     public override void Update()
     {
-        switch (_path.Count > 0 ? _path.Dequeue() : char.MaxValue)
+        switch (Path.Route.Count > 0 ? Path.Route.Dequeue() : char.MaxValue)
         {
             case (char) PathDirection.North:
                 Y--;
@@ -35,5 +35,5 @@ public class Aircraft : MapItem
         }
     }
 
-    public string GetPath() => _path.Aggregate("", (current, item) => current + item);
+    public string GetPath() => Path.Route.Aggregate("", (current, item) => current + item);
 }

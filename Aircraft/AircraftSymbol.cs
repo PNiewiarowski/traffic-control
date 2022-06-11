@@ -1,4 +1,4 @@
-namespace TrafficController.Plane;
+namespace TrafficController.Aircraft;
 
 public enum AircraftSymbol
 {
