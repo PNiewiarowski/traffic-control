@@ -14,7 +14,6 @@ void Main()
     while (run)
     {
         Logger.Reset();
-
         Logger.Log($"{error}{Environment.NewLine}");
         error = "";
 
@@ -53,9 +52,8 @@ void Main()
                 }
                 catch (FormatException)
                 {
-                    error = "Error: Next time enter number, ok?";
+                    error += "Error: Next time enter number, ok?";
                 }
-
                 break;
             case "d":
             case "delete":
