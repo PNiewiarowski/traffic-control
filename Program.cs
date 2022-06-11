@@ -10,9 +10,14 @@ void Main()
     var menu = GetMainMenu();
 
     var run = true;
+    var error = "";
     while (run)
     {
         Logger.Reset();
+
+        Logger.Log($"{error}{Environment.NewLine}");
+        error = "";
+
         Logger.LogYellow($"{Environment.NewLine}RADAR{Environment.NewLine}");
         map.Print();
 
@@ -42,7 +47,15 @@ void Main()
                 break;
             case "c":
             case "create":
-                map.AddItemToRender(GetPlaneFromUser());
+                try
+                {
+                    map.AddItemToRender(GetPlaneFromUser());
+                }
+                catch (FormatException)
+                {
+                    error = "Error: Next time enter number, ok?";
+                }
+
                 break;
             case "d":
             case "delete":
@@ -87,14 +100,22 @@ Aircraft GetPlaneFromUser()
     Logger.LogYellow("Enter new plane Y: ");
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogYellow(
-        $"{(char) PathDirection.North} -> {PathDirection.North}{Environment.NewLine}" +
-        $"{(char) PathDirection.South} -> {PathDirection.South}{Environment.NewLine}" +
-        $"{(char) PathDirection.East} -> {PathDirection.East}{Environment.NewLine}" +
-        $"{(char) PathDirection.West} -> {PathDirection.West}{Environment.NewLine}"
-    );
-    Logger.LogYellow("Enter path plane: ");
-    var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
+    Logger.LogYellow("Do you want insert path[Y/N]?: ");
+    Queue<char> newPath;
+    if (Console.ReadLine()?.ToLower() == "y")
+    {
+        Logger.LogYellow(
+            $"{(char) PathDirection.North} -> {PathDirection.North}{Environment.NewLine}" +
+            $"{(char) PathDirection.South} -> {PathDirection.South}{Environment.NewLine}" +
+            $"{(char) PathDirection.East} -> {PathDirection.East}{Environment.NewLine}" +
+            $"{(char) PathDirection.West} -> {PathDirection.West}{Environment.NewLine}"
+        );
+        Logger.LogYellow("Enter path plane: ");
+        newPath = new Queue<char>(Console.ReadLine()?.ToUpper().ToCharArray() ?? Array.Empty<char>());
+    }
+    else
+        newPath = PathBuilder.Build(20);
+
 
     GetAircraftSubmenu().Print();
     Logger.LogYellow("Enter type of Aircraft: ");
