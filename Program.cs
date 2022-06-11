@@ -1,5 +1,6 @@
 ﻿using TrafficController.Map;
 using TrafficController.Plane;
+using TrafficController.Route;
 using TrafficController.Ui;
 using TrafficController.Utils;
 
@@ -20,7 +21,7 @@ void Main()
             ? $"{Environment.NewLine}No items on map!{Environment.NewLine}"
             : $"{Environment.NewLine}Existing map items UUID:{Environment.NewLine}";
         Logger.LogYellow(uuidMessage);
-        map.PrintAllUuid();
+        map.PrintAllAircraft();
 
         Logger.LogYellow($"{Environment.NewLine}MENU{Environment.NewLine}");
         menu.Print();
@@ -32,17 +33,43 @@ void Main()
             case "e":
                 run = false;
                 break;
+            case "u":
+            case "update":
+                UpdatePath(map);
+                break;
             case "next":
             case "n":
                 map.UpdateItems();
                 break;
             case "c":
             case "create":
-                var plane = GetPlaneFromUser();
-                map.AddItemToRender(plane);
+                map.AddItemToRender(GetPlaneFromUser());
+                break;
+            case "d":
+            case "delete":
+                DeleteItem(map);
                 break;
         }
     }
+}
+
+void UpdatePath(Map map)
+{
+    Logger.LogYellow("Enter aircraft UUID: ");
+    var uuid = Console.ReadLine();
+
+    Logger.LogYellow("Enter new path: ");
+    var path = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
+
+    map.UpdateItemPath(uuid, path);
+}
+
+void DeleteItem(Map map)
+{
+    Logger.LogYellow("Enter aircraft UUID: ");
+    var uuid = Console.ReadLine();
+
+    map.DeleteItemByUuid(uuid);
 }
 
 Map GetMap() =>
@@ -61,18 +88,23 @@ Aircraft GetPlaneFromUser()
     Logger.LogYellow("Enter new plane Y: ");
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogYellow("Enter path plane[N -> UP, S -> DOWN, E -> RIGHT, W -> LEFT]: ");
+    Logger.LogYellow(
+        $"{(char) PathDirection.North} -> UP{Environment.NewLine}" +
+        $"{(char) PathDirection.South} -> DOWN{Environment.NewLine}" +
+        $"{(char) PathDirection.East} -> RIGHT{Environment.NewLine}" +
+        $"{(char) PathDirection.West} -> LEFT{Environment.NewLine}"
+    );
+    Logger.LogYellow("Enter path plane: ");
     var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
 
     GetAircraftSubmenu().Print();
     Logger.LogYellow("Enter type of Aircraft: ");
-    var type = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
-    return type switch
+    return Console.ReadLine() switch
     {
-        1 => new HotAirBalloon(newX, newY, newPath),
-        2 => new Helicopter(newX, newY, newPath),
-        3 => new Plane(newX, newY, newPath),
-        4 => new Glider(newX, newY, newPath),
+        "1" => new HotAirBalloon(newX, newY, newPath),
+        "2" => new Helicopter(newX, newY, newPath),
+        "3" => new Plane(newX, newY, newPath),
+        "4" => new Glider(newX, newY, newPath),
         _ => new Aircraft(newX, newY, newPath)
     };
 }
@@ -83,19 +115,21 @@ Menu GetMainMenu() =>
             $"[e] exit from menu{Environment.NewLine}",
             $"[n] go next{Environment.NewLine}",
             $"[c] set new plane{Environment.NewLine}",
+            $"[u] update plane path{Environment.NewLine}",
+            $"[d] delete plane{Environment.NewLine}",
         }
     );
 
 Menu GetAircraftSubmenu() =>
     new(new[]
         {
+            $"[1] Hot air balloon{Environment.NewLine}",
             $"[2] Helicopter{Environment.NewLine}",
             $"[3] Plane{Environment.NewLine}",
             $"[4] Glider{Environment.NewLine}",
             $"[default] Is it a Plane? Is it a Bird? No it's dsafxcvzxcvz[?]{Environment.NewLine}"
         }
     );
-
 
 if (!new[] {0, 1}.Contains(args.Length))
 {

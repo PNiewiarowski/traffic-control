@@ -1,10 +1,11 @@
 using TrafficController.Map;
+using TrafficController.Route;
 
 namespace TrafficController.Plane;
 
 public class Aircraft : MapItem
 {
-    private readonly Queue<char> _path;
+    private Queue<char> _path;
 
     public Aircraft(int x, int y, Queue<char> path) : base(x, y)
     {
@@ -12,20 +13,22 @@ public class Aircraft : MapItem
         Symbol = (char) AircraftSymbol.Undefined;
     }
 
+    public void ChangePath(Queue<char> path) => _path = path;
+
     public override void Update()
     {
         switch (_path.Count != 1 ? _path.Dequeue() : _path.Last())
         {
-            case 'N':
+            case (char) PathDirection.North:
                 Y--;
                 break;
-            case 'S':
+            case (char) PathDirection.South:
                 Y++;
                 break;
-            case 'E':
+            case (char) PathDirection.East:
                 X++;
                 break;
-            case 'W':
+            case (char) PathDirection.West:
                 X--;
                 break;
         }

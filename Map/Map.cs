@@ -1,3 +1,4 @@
+using TrafficController.Plane;
 using TrafficController.Utils;
 using TrafficController.Ui;
 
@@ -6,24 +7,24 @@ namespace TrafficController.Map;
 public class Map
 {
     private readonly char[][] _map;
-    private readonly List<MapItem> _itemsToRender;
+    private List<Aircraft> _aircraft;
 
-    public Map(string map, List<MapItem> itemsToRender)
+    public Map(string map, List<Aircraft> aircraft)
     {
-        _itemsToRender = itemsToRender;
+        _aircraft = aircraft;
         _map = map
             .Split(Environment.NewLine)
             .Select(line => line.ToCharArray()).ToArray();
     }
 
-    public void AddItemToRender(MapItem item) => _itemsToRender.Add(item);
+    public void AddItemToRender(Aircraft item) => _aircraft.Add(item);
 
-    public int CountAllItems() => _itemsToRender.Count;
+    public int CountAllItems() => _aircraft.Count;
 
-    public void PrintAllUuid()
+    public void PrintAllAircraft()
     {
-        foreach (var item in _itemsToRender)
-            Logger.Log(item.Uuid);
+        foreach (var item in _aircraft)
+            Logger.Log($"{item.Uuid}{Environment.NewLine}");
     }
 
     public void Print()
@@ -33,7 +34,7 @@ public class Map
             Logger.LogGreen($"{y:00}");
             for (var x = 0; x < _map[y].Length; x++)
             {
-                var item = _itemsToRender.FirstOrDefault(i => i.X == x && i.Y == y);
+                var item = _aircraft.FirstOrDefault(i => i.X == x && i.Y == y);
                 if (item != null)
                 {
                     Logger.LogMapItem(item);
@@ -59,5 +60,10 @@ public class Map
         }
     }
 
-    public void UpdateItems() => _itemsToRender.ForEach(i => i.Update());
+    public void UpdateItems() => _aircraft.ForEach(i => i.Update());
+
+    public void UpdateItemPath(string? uuid, Queue<char> path) =>
+        _aircraft.First(aircraft => aircraft.Uuid == uuid).ChangePath(path);
+
+    public void DeleteItemByUuid(string? uuid) => _aircraft = _aircraft.Where(item => item.Uuid != uuid).ToList();
 }

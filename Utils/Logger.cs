@@ -1,5 +1,4 @@
 using TrafficController.Map;
-using TrafficController.Plane;
 using TrafficController.Ui;
 
 namespace TrafficController.Utils;
