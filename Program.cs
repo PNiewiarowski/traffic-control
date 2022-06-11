@@ -1,5 +1,5 @@
-﻿using TrafficController.Classes;
-using TrafficController.Map;
+﻿using TrafficController.Map;
+using TrafficController.Plane;
 using TrafficController.UI;
 using TrafficController.Utils;
 

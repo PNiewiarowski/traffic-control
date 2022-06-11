@@ -1,10 +1,10 @@
 using TrafficController.Map;
 
-namespace TrafficController.Classes;
+namespace TrafficController.Plane;
 
 public class Plane : MapItem
 {
-    private Queue<char> _path;
+    private readonly Queue<char> _path;
 
     public Plane(int x, int y, Queue<char> path) : base(x, y)
     {
