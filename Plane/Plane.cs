@@ -24,8 +24,6 @@ public class Plane : MapItem
             case 'W':
                 X--;
                 break;
-            default:
-                break;
         }
     }
 }
