@@ -5,8 +5,15 @@ namespace TrafficController.Plane;
 public class Plane : MapItem
 {
     private readonly Queue<char> _path;
+    private readonly string _uud;
 
-    public Plane(int x, int y, Queue<char> path) : base(x, y) => _path = path;
+    public Plane(int x, int y, Queue<char> path) : base(x, y)
+    {
+        _path = path;
+        _uuid = Guid.NewGuid().ToString();
+    }
+
+    public override string ToString() => _uuid;
 
     public override void Update()
     {
