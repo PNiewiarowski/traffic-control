@@ -1,6 +1,6 @@
 using TrafficController.Enums;
 
-namespace TrafficController.Classes;
+namespace TrafficController.Utils;
 
 public static class Logger
 {
@@ -9,32 +9,32 @@ public static class Logger
         Console.Write(message);
         Console.ResetColor();
     }
-
-    public static void LogError(string message)
-    {
-        Console.ForegroundColor = ConsoleColor.Red;
-        Log(message);
-    }
-
-    public static void LogWarning(string message)
-    {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Log(message);
-    }
-
-    public static void LogSuccess(string message)
-    {
-        Console.ForegroundColor = ConsoleColor.Green;
-        Log(message);
-    }
-
-    public static void LogColor(ConsoleColor color, string message)
+    
+    public static void Log(ConsoleColor color, string message)
     {
         Console.BackgroundColor = color;
         Console.ForegroundColor = color;
         Log(message);
     }
 
+    public static void LogRed(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Log(message);
+    }
+
+    public static void LogYellow(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Log(message);
+    }
+
+    public static void LogGreen(string message)
+    {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Log(message);
+    }
+    
     public static void LogPlane()
     {
         Console.BackgroundColor = (ConsoleColor) Color.BackgroundSky;

@@ -1,4 +1,5 @@
 ﻿using TrafficController.Classes;
+using TrafficController.Utils;
 
 void Main()
 {
@@ -10,13 +11,13 @@ void Main()
     {
         Logger.Reset();
 
-        Logger.LogWarning($"{Environment.NewLine}R_A_D_A_R {Environment.NewLine}");
+        Logger.LogYellow($"{Environment.NewLine}R_A_D_A_R {Environment.NewLine}");
         map.Print();
 
-        Logger.LogWarning($"{Environment.NewLine}M_E_N_U {Environment.NewLine}");
+        Logger.LogYellow($"{Environment.NewLine}M_E_N_U {Environment.NewLine}");
         menu.Print();
 
-        Logger.LogWarning("Your choice: ");
+        Logger.LogYellow("Your choice: ");
         switch (Console.ReadLine()?.ToLower())
         {
             case "exit":
@@ -60,13 +61,13 @@ Menu GetMenu()
 
 Plane GetPlaneFromUser()
 {
-    Logger.LogWarning("Enter new plane x: ");
+    Logger.LogYellow("Enter new plane x: ");
     var newX = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogWarning("Enter new plane y: ");
+    Logger.LogYellow("Enter new plane y: ");
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-    Logger.LogWarning("Enter path plane[Exp: NNNEWWE]: ");
+    Logger.LogYellow("Enter path plane[Exp: NNNEWWE]: ");
     var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
 
     return new Plane(newX, newY, newPath);
@@ -74,8 +75,8 @@ Plane GetPlaneFromUser()
 
 if (!new[] {0, 1}.Contains(args.Length))
 {
-    Logger.LogError($"Invalid arguments!{Environment.NewLine}");
-    Logger.LogError($"Load map from file: <Program> <path_to_file>{Environment.NewLine}");
-    Logger.LogError($"Generate map with default parameters: <Program>{Environment.NewLine}");
+    Logger.LogRed($"Invalid arguments!{Environment.NewLine}");
+    Logger.LogRed($"Load map from file: <Program> <path_to_file>{Environment.NewLine}");
+    Logger.LogRed($"Generate map with default parameters: <Program>{Environment.NewLine}");
 }
 else Main();
