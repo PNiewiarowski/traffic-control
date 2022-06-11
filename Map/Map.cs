@@ -18,6 +18,14 @@ public class Map
 
     public void AddItemToRender(MapItem item) => _itemsToRender.Add(item);
 
+    public int CountAllItems() => _itemsToRender.Count;
+
+    public void PrintAllUuid()
+    {
+        foreach (var item in _itemsToRender)
+            Logger.Log(item.Uuid);
+    }
+
     public void Print()
     {
         for (var y = 0; y < _map.Length - 1; y++)

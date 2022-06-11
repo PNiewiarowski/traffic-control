@@ -7,19 +7,25 @@ void Main()
 {
     var map = GetMap();
     var menu = GetMenu();
+
     var run = true;
 
     while (run)
     {
         Logger.Reset();
         Logger.LogYellow($"{Environment.NewLine}R_A_D_A_R{Environment.NewLine}");
-        
         map.Print();
-        Logger.LogYellow($"{Environment.NewLine}M_E_N_U{Environment.NewLine}");
-        
-        menu.Print();
-        Logger.LogYellow("Your choice: ");
 
+        var uuidMessage = map.CountAllItems() == 0
+            ? $"{Environment.NewLine}No items on map!{Environment.NewLine}"
+            : $"{Environment.NewLine}Existing map items UUID:{Environment.NewLine}";
+        Logger.LogYellow(uuidMessage);
+        map.PrintAllUuid();
+
+        Logger.LogYellow($"{Environment.NewLine}M_E_N_U{Environment.NewLine}");
+        menu.Print();
+
+        Logger.LogYellow("Your choice: ");
         switch (Console.ReadLine()?.ToLower())
         {
             case "exit":
