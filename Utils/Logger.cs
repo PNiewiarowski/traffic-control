@@ -43,6 +43,13 @@ public static class Logger
         Log(item.ToString());
     }
 
+    public static void LogMapItemWarning(MapItem item)
+    {
+        Console.BackgroundColor = (ConsoleColor) Color.BackgroundWarning;
+        Console.ForegroundColor = (ConsoleColor) Color.ForegroundPlane;
+        Log(item.ToString());
+    }
+
     public static void Reset()
     {
         Console.ResetColor();

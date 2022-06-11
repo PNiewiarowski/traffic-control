@@ -1,4 +1,4 @@
-namespace TrafficController.Route;
+namespace TrafficController.Path;
 
 public enum PathDirection
 {

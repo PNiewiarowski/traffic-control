@@ -1,6 +1,6 @@
 ﻿using TrafficController.Map;
+using TrafficController.Path;
 using TrafficController.Plane;
-using TrafficController.Route;
 using TrafficController.Ui;
 using TrafficController.Utils;
 
@@ -10,7 +10,6 @@ void Main()
     var menu = GetMainMenu();
 
     var run = true;
-
     while (run)
     {
         Logger.Reset();
@@ -89,10 +88,10 @@ Aircraft GetPlaneFromUser()
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
     Logger.LogYellow(
-        $"{(char) PathDirection.North} -> UP{Environment.NewLine}" +
-        $"{(char) PathDirection.South} -> DOWN{Environment.NewLine}" +
-        $"{(char) PathDirection.East} -> RIGHT{Environment.NewLine}" +
-        $"{(char) PathDirection.West} -> LEFT{Environment.NewLine}"
+        $"{(char) PathDirection.North} -> {PathDirection.North}{Environment.NewLine}" +
+        $"{(char) PathDirection.South} -> {PathDirection.South}{Environment.NewLine}" +
+        $"{(char) PathDirection.East} -> {PathDirection.East}{Environment.NewLine}" +
+        $"{(char) PathDirection.West} -> {PathDirection.West}{Environment.NewLine}"
     );
     Logger.LogYellow("Enter path plane: ");
     var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
