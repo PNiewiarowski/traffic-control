@@ -28,7 +28,7 @@ public static class Logger
         Console.ForegroundColor = ConsoleColor.Yellow;
         Log(message);
     }
-
+    
     public static void LogGreen(string message)
     {
         Console.ForegroundColor = ConsoleColor.Green;

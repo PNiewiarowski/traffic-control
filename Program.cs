@@ -13,11 +13,13 @@ void Main()
     {
         Logger.Reset();
         Logger.LogYellow($"{Environment.NewLine}R_A_D_A_R{Environment.NewLine}");
+        
         map.Print();
         Logger.LogYellow($"{Environment.NewLine}M_E_N_U{Environment.NewLine}");
+        
         menu.Print();
-
         Logger.LogYellow("Your choice: ");
+
         switch (Console.ReadLine()?.ToLower())
         {
             case "exit":

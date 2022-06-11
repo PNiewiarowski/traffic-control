@@ -6,15 +6,11 @@ public class Plane : MapItem
 {
     private readonly Queue<char> _path;
 
-    public Plane(int x, int y, Queue<char> path) : base(x, y)
-    {
-        _path = path;
-    }
+    public Plane(int x, int y, Queue<char> path) : base(x, y) => _path = path;
 
     public override void Update()
     {
-        var move = _path.Dequeue();
-        switch (move)
+        switch (_path.Count != 1 ? _path.Dequeue() : _path.Last())
         {
             case 'N':
                 Y--;
@@ -27,6 +23,8 @@ public class Plane : MapItem
                 break;
             case 'W':
                 X--;
+                break;
+            default:
                 break;
         }
     }
