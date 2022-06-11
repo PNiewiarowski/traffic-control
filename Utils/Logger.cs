@@ -1,3 +1,5 @@
+using TrafficController.Map;
+using TrafficController.Plane;
 using TrafficController.UI;
 
 namespace TrafficController.Utils;
@@ -9,7 +11,7 @@ public static class Logger
         Console.Write(message);
         Console.ResetColor();
     }
-    
+
     public static void Log(ConsoleColor color, string message)
     {
         Console.BackgroundColor = color;
@@ -28,18 +30,18 @@ public static class Logger
         Console.ForegroundColor = ConsoleColor.Yellow;
         Log(message);
     }
-    
+
     public static void LogGreen(string message)
     {
         Console.ForegroundColor = ConsoleColor.Green;
         Log(message);
     }
-    
-    public static void LogPlane()
+
+    public static void LogMapItem(MapItem item)
     {
         Console.BackgroundColor = (ConsoleColor) Color.BackgroundSky;
         Console.ForegroundColor = (ConsoleColor) Color.ForegroundPlane;
-        Log("V");
+        Log(item.ToString());
     }
 
     public static void Reset()

@@ -36,7 +36,7 @@ public class Map
                 var item = _itemsToRender.FirstOrDefault(i => i.X == x && i.Y == y);
                 if (item != null)
                 {
-                    Logger.LogPlane();
+                    Logger.LogMapItem(item);
                     continue;
                 }
 

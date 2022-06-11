@@ -4,7 +4,8 @@ public abstract class MapItem
 {
     public int X;
     public int Y;
-    public string Uuid;
+    protected char Symbol;
+    public readonly string Uuid;
 
     protected MapItem(int x, int y)
     {
@@ -12,6 +13,8 @@ public abstract class MapItem
         Y = y;
         Uuid = Guid.NewGuid().ToString();
     }
+    
+    public override string ToString() => Symbol.ToString();
 
     public abstract void Update();
 }

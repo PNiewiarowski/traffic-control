@@ -63,7 +63,7 @@ Menu GetMenu() =>
         }
     );
 
-Plane GetPlaneFromUser()
+Aircraft GetPlaneFromUser()
 {
     Logger.LogYellow("Enter new plane X: ");
     var newX = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
@@ -74,7 +74,21 @@ Plane GetPlaneFromUser()
     Logger.LogYellow("Enter path plane[N -> UP, S -> DOWN, E -> RIGHT, W -> LEFT]: ");
     var newPath = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
 
-    return new Plane(newX, newY, newPath);
+    Logger.Log($"[1] Hot air balloon{Environment.NewLine}");
+    Logger.Log($"[2] Helicopter{Environment.NewLine}");
+    Logger.Log($"[3] Plane{Environment.NewLine}");
+    Logger.Log($"[4] Glider{Environment.NewLine}");
+    Logger.Log($"[default] Is it a Plane? Is it a Bird? No it's dsafxcvzxcvz[?]{Environment.NewLine}");
+    Logger.LogYellow("Enter type of Aircraft: ");
+    var type = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+    return type switch
+    {
+        1 => new HotAirBalloon(newX, newY, newPath),
+        2 => new Helicopter(newX, newY, newPath),
+        3 => new Plane(newX, newY, newPath),
+        4 => new Glider(newX, newY, newPath),
+        _ => new Aircraft(newX, newY, newPath)
+    };
 }
 
 if (!new[] {0, 1}.Contains(args.Length))
