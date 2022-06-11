@@ -1,8 +1,8 @@
-using TrafficController.Interfaces;
+using TrafficController.Utils;
 
-namespace TrafficController.Classes;
+namespace TrafficController.Ui;
 
-public class Menu : List<string>, IUiElement
+public class Menu : List<string>
 {
     public Menu(IEnumerable<string> options)
     {
