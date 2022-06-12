@@ -90,7 +90,7 @@ void UpdatePath(Map map)
     }
 
     Logger.LogYellow("Enter new path: ");
-    var path = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
+    var path = new Queue<char>(Console.ReadLine()?.ToUpper()?.ToCharArray() ?? Array.Empty<char>());
 
     map.UpdateItemPath(uuid, path);
 }
