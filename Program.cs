@@ -73,8 +73,21 @@ void Main()
 
 void UpdatePath(Map map)
 {
-    Logger.LogYellow("Enter aircraft UUID: ");
-    var uuid = Console.ReadLine();
+    var uuid = "";
+    while (true) {
+        Logger.LogYellow("Enter aircraft UUID: ");
+        uuid = Console.ReadLine();
+        if (uuid=="")
+        {
+            return;
+        }
+        if (!map.UUIDValidate(uuid))
+        {
+            Logger.LogRed("Invalid UUID! Try again or press enter to cancel.\n");
+            continue;
+        }
+        break;
+    }
 
     Logger.LogYellow("Enter new path: ");
     var path = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());

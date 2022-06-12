@@ -26,6 +26,18 @@ public class Map
     public int CountAllItems() =>
         _aircraft.Count;
 
+    public bool UUIDValidate(string? UUID)
+    {
+        foreach (var item in _aircraft)
+        {
+            if (item.Uuid == UUID)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
     public void PrintAllAircraft()
     {
         foreach (var item in _aircraft)
