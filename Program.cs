@@ -49,6 +49,7 @@ void Main()
                 {
                     error += $"Error: Next time enter correct UUID, ok?{Environment.NewLine}";
                 }
+
                 break;
             case "next":
             case "n":
@@ -84,7 +85,7 @@ void UpdatePath(Map map)
     var uuid = Console.ReadLine();
 
     Logger.LogYellow("Enter new path: ");
-    var path = new Queue<char>(Console.ReadLine()?.ToCharArray() ?? Array.Empty<char>());
+    var path = new Queue<char>(Console.ReadLine()?.ToUpper().ToCharArray() ?? Array.Empty<char>());
 
     map.UpdateItemPath(uuid, path);
 }
