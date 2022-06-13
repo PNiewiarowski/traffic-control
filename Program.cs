@@ -41,7 +41,15 @@ void Main()
                 break;
             case "u":
             case "update":
-                UpdatePath(map);
+                try
+                {
+                    UpdatePath(map);
+                }
+                catch (InvalidOperationException)
+                {
+                    error += $"Error: Next time enter correct UUID, ok?{Environment.NewLine}";
+                }
+
                 break;
             case "next":
             case "n":
@@ -55,7 +63,7 @@ void Main()
                 }
                 catch (FormatException)
                 {
-                    error += "Error: Next time enter number, ok?";
+                    error += $"Error: Next time enter number, ok?{Environment.NewLine}";
                 }
 
                 break;
