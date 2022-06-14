@@ -61,9 +61,14 @@ void Main()
                 {
                     map.AddItemToRender(GetPlaneFromUser());
                 }
-                catch (FormatException)
+                catch (InvalidRouteError)
                 {
-                    error += $"Error: Next time enter number, ok?{Environment.NewLine}";
+                    error += $"Error: Invalid route!{Environment.NewLine}";
+                    continue;
+                }
+                catch (Exception ex) when (ex is FormatException || ex is InvalidOperationException)
+                {
+                    error += $"Error: Next time enter valid map coordinate number, ok?{Environment.NewLine}";
                 }
 
                 break;
@@ -73,7 +78,11 @@ void Main()
                 break;
             case "r":
             case "random":
-                AddRandomAircraft(map);
+                try {
+                    AddRandomAircraft(map);
+                } catch (InvalidRouteError) {
+                    error += $"Invalid route given!{Environment.NewLine}";
+                }
                 break;
         }
     }
@@ -177,9 +186,11 @@ Aircraft GetPlaneFromUser()
 {
     Logger.LogYellow("Enter new plane X: ");
     var newX = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+    if (0>newX|newX>30) throw new InvalidOperationException();
 
     Logger.LogYellow("Enter new plane Y: ");
     var newY = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
+    if (0>newY|newY>30) throw new InvalidOperationException();
 
     Logger.LogYellow("Do you want insert path[Y/N]?: ");
     Queue<char> newPath;
